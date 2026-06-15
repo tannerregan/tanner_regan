@@ -67,7 +67,7 @@ a:hover {
 
 .site-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -78,6 +78,18 @@ a:hover {
   font-weight: 600;
   font-size: 0.95rem;
   padding-bottom: 4px;
+}
+
+@media (max-width: 480px) {
+  .site-nav {
+    width: 100%;
+    gap: 0.55rem;
+    flex-wrap: nowrap;
+  }
+
+  .site-nav a {
+    font-size: 0.82rem;
+  }
 }
 
 .site-nav a:hover,
@@ -112,6 +124,10 @@ a:hover {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
+}
+
+.page-wrap--solo {
+  max-width: 900px;
 }
 
 /* Sidebar */
@@ -191,6 +207,11 @@ h2 {
   margin: 2.2rem 0 0.9rem;
   border-bottom: 1px solid var(--gw-buff);
   padding-bottom: 0.4rem;
+}
+
+.page__content > h2:first-child,
+.page__content > p:first-child {
+  margin-top: 0;
 }
 
 h3 {
