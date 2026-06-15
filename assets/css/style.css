@@ -126,10 +126,6 @@ a:hover {
   align-items: flex-start;
 }
 
-.page-wrap--solo {
-  max-width: 900px;
-}
-
 /* Sidebar */
 
 .sidebar {
@@ -369,11 +365,6 @@ main ul:not(.pub-list):not(.event-list):not(.author__urls) li {
   }
 
   .sidebar {
-    width: 100%;
-  }
-
-  .author__avatar img {
-    width: 130px;
-    height: 130px;
+    display: none;
   }
 }
