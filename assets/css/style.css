@@ -1,0 +1,147 @@
+/* Tanner Regan - personal academic site */
+
+:root {
+  --max-width: 800px;
+  --text-color: #222;
+  --muted-color: #555;
+  --link-color: #1155cc;
+  --border-color: #ddd;
+  --bg-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 1.5rem;
+}
+
+.site-header .site-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav.site-nav {
+  margin-top: 0.5rem;
+}
+
+nav.site-nav a {
+  display: inline-block;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  color: var(--muted-color);
+  font-weight: 500;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--link-color);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+a {
+  color: var(--link-color);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.profile img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.profile .intro {
+  flex: 1;
+  min-width: 260px;
+}
+
+.intro .position {
+  color: var(--muted-color);
+  margin-top: 0;
+}
+
+.contact-block {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: #f7f7f7;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+ul.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.pub-list > li {
+  margin-bottom: 1.25rem;
+}
+
+.pub-meta {
+  color: var(--muted-color);
+  font-size: 0.92rem;
+}
+
+.pub-links a {
+  margin-right: 0.75rem;
+  font-size: 0.92rem;
+}
+
+.event-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-list li {
+  margin-bottom: 0.4rem;
+}
+
+footer.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  color: var(--muted-color);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color);
+}
