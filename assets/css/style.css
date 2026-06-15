@@ -215,6 +215,19 @@ a:hover {
   fill: var(--gw-blue);
 }
 
+.author__social a.author__social-text {
+  width: auto;
+  border-radius: 999px;
+  padding: 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gw-blue);
+}
+
+.author__social a.author__social-text:hover {
+  text-decoration: none;
+}
+
 /* Main content */
 
 .page__content {
