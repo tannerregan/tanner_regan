@@ -186,6 +186,35 @@ a:hover {
   fill: var(--gw-blue);
 }
 
+.author__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.author__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--gw-buff);
+  background: #ffffff;
+  transition: background 0.15s ease-in-out;
+}
+
+.author__social a:hover {
+  background: var(--gw-buff-light);
+}
+
+.author__social svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--gw-blue);
+}
+
 /* Main content */
 
 .page__content {
@@ -328,18 +357,10 @@ main ul:not(.pub-list):not(.event-list):not(.author__urls) li {
 
   .sidebar {
     width: 100%;
-    display: flex;
-    gap: 1.25rem;
-    align-items: flex-start;
   }
 
   .author__avatar img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .author__content {
-    margin-top: 0;
-    flex: 1;
+    width: 130px;
+    height: 130px;
   }
 }
