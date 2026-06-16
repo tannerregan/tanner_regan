@@ -367,4 +367,32 @@ main ul:not(.pub-list):not(.event-list):not(.author__urls) li {
   .sidebar {
     display: none;
   }
+
+  body.home .sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  body.home .author__avatar {
+    text-align: center;
+  }
+
+  body.home .author__avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  body.home .author__content {
+    text-align: center;
+  }
+
+  body.home .author__urls {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.home .author__social {
+    justify-content: center;
+  }
 }
