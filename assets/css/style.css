@@ -376,11 +376,29 @@ main ul:not(.pub-list):not(.event-list):not(.author__urls) li {
   padding: 0.85rem 1.1rem;
 }
 
+.cv-download-btn {
+  display: inline-block;
+  margin-top: 0.85rem;
+  padding: 0.3rem 0.65rem;
+  background: var(--gw-navy);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+
+.cv-download-btn:hover {
+  background: #0a1f4a;
+}
+
 .research-interests__fields {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--gw-navy);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.25rem;
 }
 
 .research-interests__topics {
