@@ -350,6 +350,150 @@ main ul:not(.pub-list):not(.event-list):not(.author__urls) li {
   margin-bottom: 0.4rem;
 }
 
+/* Section heading link */
+
+.section-link {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted-color);
+  margin-left: 0.75rem;
+  vertical-align: middle;
+}
+
+.section-link:hover {
+  color: var(--gw-blue);
+}
+
+/* Research interest tags */
+
+.research-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.interest-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gw-blue);
+  border: 1px solid var(--gw-buff);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  background: var(--gw-buff-light);
+}
+
+/* Featured project cards */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.project-card {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  color: var(--text-color);
+  transition: box-shadow 0.15s;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+
+.project-card__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, var(--gw-buff-light) 0%, var(--gw-buff) 100%);
+}
+
+.project-card__image--split {
+  position: relative;
+  overflow: hidden;
+}
+
+.split-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-img--tl {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.split-img--br {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.split-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.split-label {
+  position: absolute;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0,0,0,0.45);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  pointer-events: none;
+  line-height: 1.2;
+}
+
+.split-label--tl {
+  top: 0.4rem;
+  left: 0.4rem;
+}
+
+.split-label--br {
+  bottom: 0.4rem;
+  right: 0.4rem;
+}
+
+.project-card__body {
+  padding: 0.8rem 1rem;
+}
+
+.project-card__body h3 {
+  font-size: 0.9rem;
+  color: var(--gw-blue);
+  margin: 0 0 0.25rem;
+}
+
+.project-card__body p {
+  font-size: 0.8rem;
+  color: var(--muted-color);
+  margin: 0;
+}
+
+.project-card__body .project-blurb {
+  margin-top: 0.4rem;
+  color: var(--text-color);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Contact block */
 
 .contact-block {

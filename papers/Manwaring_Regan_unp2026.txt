@@ -1,0 +1,5507 @@
+No shame in my name:
+Public disclosure and tax compliance
+in a low-capacity state
+Priya Manwaring & Tanner Regan∗
+May 5, 2026
+Abstract
+Public disclosure of tax behavior is potentially promising for raising compliance in lowcapacity states. This paper provides evidence on the social determinants of tax compliance
+through two cross-randomized experiments in Kampala, Uganda. We estimate effects of
+reporting delinquents and recognizing compliers. Compliance increases 17% for those
+subject to reporting but falls 16% for those promised recognition. Results support a model
+where being publicly known as tax-liable is costly but social sanctions for delinquency are
+limited. Further, disseminating tax behavior causes recipients to update compliance beliefs
+downward and reduces actual compliance by 20%. Overall, simple enforcement reminders
+raise more revenue.
+JEL codes: O12, O18, H26, H30
+Keywords: property tax, tax morale, public disclosure, Africa
+
+∗ Affiliations:
+
+Manwaring Department of Economics, University of Oxford (priya.manwaring@economics.ox.ac.uk), Regan (corresponding author) Department of Economics and Elliott School of International
+Affairs, George Washington University and Centre for Economic Performance, LSE (tanner_regan@gwu.edu, 2115
+G St. NW, Washington, D.C.). We gratefully acknowledge financial support from the Institute for Development
+Studies and the International Growth Centre. This project passed the LSE Research Ethics Committee IRB
+review in January 2020 [REC ref. 1048], and was approved for in-country research by the Uganda National
+Council for Science and Technology (UNSCT) in July 2020 [REC ref. SS457ES]. This RCT was registered
+as AEARCTR-0005328 (Manwaring & Regan, 2021). For helpful feedback we thank Vittorio Bassi, Augustin
+Bergeron, Anne Brockmeyer, Harriet Conron, Pascaline Dupas, Nada Eissa, Alessandra Fenizia, Simon Franklin,
+Steven Hamilton, Vernon Henderson, Justine Knebelmann, Nicholas Li, Mahvish Shaukat, Robert Meltcalfe, Colette
+Nyirakamana, Oyebola Okunogbe, Victor Pouliquen, Olmo Silva, Joel Slemrod, Jonathan Weigel, Maisy Wong,
+Tony Yezer, Laura Zimmermann and two anonymous ICTD affiliates. We also thank seminar participants at W&M,
+GMU Schar, LSE Geography WiP, GW applied micro lunch, and IFS TaxDev. This project would not have been
+possible without collaboration with the Kampala Capital City Authority’s Directorate of Revenue Collection and, in
+particular, Jones Ahabwe, Henry Kikonyogo, Robert Raikes Mugangaizi, Daniel Muhumuza Nuweabine, and Julius
+Mutebi.
+
+1
+
+1
+
+Introduction
+
+Raising tax revenue is a primary challenge for low-income states with limited enforcement capacity
+(Besley and Persson, 2014). One potential policy tool to raise compliance is public disclosure of
+tax behavior; shaming tax delinquents, recognizing tax compliers, or indiscriminately publishing
+tax behavior. Already common in developed countries, such programs can be particularly
+appealing to governments in low-income countries due to their relatively light administrative
+burden.1 Yet, evidence from high-income countries may be less applicable to low-income
+settings where, among other things, high rates of delinquency may shape norms around tax
+evasion (Besley et al., 2022). Understanding how public disclosure can affect tax compliance
+can be highly policy relevant for these low capacity settings.
+The underlying tax morale mechanisms through which public disclosure affects tax behavior
+are of interest in and of themselves, but also for careful policy design. Generally, “tax morale”
+captures non-pecuniary motivations for tax compliance and factors outside the standard expected
+utility framework (Luttmer and Singhal, 2014). We consider three key mechanisms for public
+disclosure. First, social image effects of compliance status (Bursztyn and Jensen, 2017), e.g. the
+threat of disclosing delinquents could raise tax payments if individuals are ashamed to appear as
+reneging on their social obligations. Second, preferences for external privacy (Slemrod, 2025),
+e.g. disclosing an individual’s status as tax liable signals asset ownership which may impose a
+social cost through informal taxation (Jakiela and Ozier, 2015; Carranza et al., 2025).2 Third,
+public disclosure may indirectly affect the taxpayers to whom the information is disseminated by
+causing them to update their beliefs about the compliance and enforcement equilibrium and, in
+turn, their decision to comply (Del Carpio, 2022; Nathan et al., 2024).
+In sum, this paper asks: Do public disclosure policies affect tax compliance in a low-income
+setting, and if so, what are the mechanisms that drive effects? Do taxpayers feel social pressure
+to pay their taxes? Are privacy costs induced by public disclosure? How does dissemination of
+tax behavior affect recipients?
+To answer these questions, we study the impact of publicly disclosing property tax behavior
+in the city of Kampala where incomes are low, baseline tax compliance is minimal, and
+administrative capacity is relatively weak. In Kampala, owners of rental properties are subject
+to a tax, called ‘Property Rates’, on their assessed annual property income. We work with the
+Kampala Capital City Authority (KCCA) to design two cross-randomized, multi-armed, field
+experiments with roughly 70,000 tax-liable property owners to test the effects of both delinquent
+reporting and complier recognition policies on tax payments using administrative data.
+Our experiment was designed with two broad aims. First, to separately identify the effect
+of notifying that behavior will be publicly disclosed (direct effects) from the effect of publicly
+1OECD (2017) cites disclosure as the fourth most common instrument of tax debt enforcement. Pakistan, the
+Philippines, and Uganda also have examples of major income and corporate tax disclosure policies (Nakayama,
+2021).
+2A social gain to signaling wealth could drive opposing effects (Glazer and Konrad, 1996).
+
+2
+
+disseminating this information on the tax behavior of recipients (indirect effects). To do so, we
+implement our experiment across two waves preceding two tax deadlines and cross-randomize
+our treatments, so that direct effects are tested in the first wave, and indirect effects are tested
+in the second wave. Our second aim is to estimate the effects of publicly reporting delinquent
+taxpayers separately from the effects of publicly recognizing compliant taxpayers. To do so,
+we compare randomly assigned public disclosure sub-treatments that can be either positively
+(compliance) or negatively (delinquency) framed. In all cases, treatments are administered by
+text message. Wave one treatment messages inform taxpayers whether they will be disclosed for
+delinquency or for compliance,3 and wave two treatment messages contain information about
+past delinquents or compliers.
+To interpret our first wave estimates and determine the empirical relevance of different
+mechanisms, we model tax evasion in the style of the canonical Allingham and Sandmo
+(1972), formalizing mechanisms as social payoffs following Bursztyn and Jensen (2017). Public
+disclosure policies can affect behavior by changing the probability that peers believe an individual
+to be tax compliant as well as the probability that peers believe an individual to own property.
+We complement administrative data with taxpayer surveys at baseline and endline, as well
+as follow-up interviews. The baseline survey provides a broad set of descriptive statistics
+for a sample of taxpayers, whilst the endline survey provides a narrow set of beliefs for an
+expanded set of taxpayers. The latter allows us to estimate second wave treatment effects
+on proximate outcomes such as beliefs about compliance rates of different peer groups. Our
+follow-up interviews give further detail on perceived social image payoffs from a smaller sample
+of taxpayers.
+There are three key takeaways from our study. First, our results suggest that there is limited
+social pressure to pay taxes, but that public disclosure induces a privacy cost. Estimates of the
+direct effects of reporting tax delinquents (the ‘stick’) are positive; taxpayers are 17% more
+likely to comply when they are warned that they will be disclosed as delinquents if they do not
+pay.4 On the other hand, estimates of the direct effects of publicly recognizing compliers (the
+‘carrot’) are negative; taxpayers are 16% less likely to comply when they are promised that they
+will be honored as compliers if they pay. The magnitude and sign of these direct effects of
+reporting and recognition can be rationalized in the framework of our model only if there is both
+a privacy cost of being revealed as tax liable (as an owner of rental property) and no shame or
+pride in tax payment behavior. Qualitative evidence from our follow-up survey strengthens this
+interpretation as respondents perceive a variety of financial and material costs to having their
+ownership of rental properties publicly known.
+Second, we find evidence that disseminating information about the tax behavior of others
+3In addition, we compare these treatments with different types of text message nudges from the literature
+(e.g., Brockmeyer et al., 2023; Cohen, 2024; Mascagni and Nell, 2022; De Neve et al., 2021; Collin et al., 2021;
+Okunogbe, 2019).
+4This estimate is very similar in magnitude to the 21% increase of payment probability found in a field experiment
+shaming tax delinquents in the USA (Perez-Truglia and Troiano, 2018).
+
+3
+
+affects compliance. Our estimates of the indirect effects of publicly reporting tax delinquents are
+negative; taxpayers are 21% less likely to comply when they receive reports of delinquents. Our
+estimates of the indirect effects of publicly recognizing compliers are also negative; taxpayers are
+19% less likely to comply when they receive lists of compliant taxpayers. To better understand
+the mechanisms through which both reporting and recognition policies induce negative indirect
+effects, we estimate treatment effects of disseminating lists of compliers and of delinquents on a
+range of taxpayer beliefs and sentiments in our endline survey. We find that both treatments
+significantly lower taxpayer beliefs about the city wide compliance rate by 3-4% and the
+compliance rate of the wealthy by 6-7%, but have no significant effect on measured alternative
+beliefs (compliance rate of immediate neighbors, KCCA detection capacity, or whether the
+KCCA acts in the best interest of citizens). This is consistent with baseline survey evidence
+where respondents overestimate compliance rates, and so are likely to update beliefs downwards
+when shocked with information on actual compliers and delinquents. Our evidence suggests this
+is a likely mechanism through which public disclosure reduces individuals’ payment propensity.5
+Third, our results suggest that public disclosure policies are not particularly effective at
+raising revenue, at least in settings similar to Property Rates in Kampala. Publicly recognizing
+compliers clearly backfires since both direct and indirect effects are negative. Publicly reporting
+delinquents does raise compliance through direct effects, but also leads to an important unintended
+consequence where the indirect effects lower morale. Our estimates suggest that the direct effects
+are essentially canceled out by the indirect effects on average. In addition, we benchmark the
+direct effect of public disclosure policies and find that simple reminders of legal penalty measures
+for delinquency are relatively more effective at raising compliance. Even if the indirect effects
+are ignored, enforcement reminder messages are about twice as effective as public reporting.
+This paper contributes to the literature on ‘tax morale’ (Luttmer and Singhal, 2014) along
+three dimensions: social image effects of delinquency, tax privacy, and first-order beliefs of
+compliance. As the first paper to study both public reporting and recognition in the same
+experimental setting, we can isolate the relative importance of social image effects of tax
+delinquency and the preference for tax privacy.6 In a seminal paper, Perez-Truglia and Troiano
+(2018) find similar effects of shaming tax delinquents in the USA, but do not separately identify
+the privacy effect of disclosing tax liability.7 In our context, results suggest that the reduced
+form effect of publicly disclosing delinquents is not driven by the social pressure to pay taxes,
+but instead by a preference for tax privacy. In a recent review, Slemrod (2025) concludes that
+5In theory, compliance beliefs may affect compliance because of an intrinsic value in knowing that others pay,
+or because the compliance of others provides a signal about the likelihood of enforcement against delinquency, and
+we do not try to disentangle the two.
+6Various studies on tax compliance focus on just one type of public disclosure, e.g., shaming delinquents only
+(Dwenger and Treber, 2022; Angaretis et al., 2022), or publishing of reported income (Bø et al., 2015; Hasegawa
+et al., 2013).
+7In their setting, a privacy cost might be born by having one’s total debt amount disclosed if this signals income
+or wealth, or even more simply a distaste for having their personal information shared publicly. Of course, the
+US setting is also very different from ours and so we would not necessarily expect the same mechanisms at play.
+External validity is discussed in detail in Section 7.2.2.
+
+4
+
+“very little research attempts to measure the value people place specifically on tax privacy”; our
+paper provides evidence in this under-explored space. Further, our results suggest that first-order
+beliefs of tax compliance positively affect one’s own decision to comply, mediating the effect of
+dissemination on compliance. In an early study on Peru, Del Carpio (2022) found concurring
+effects but could not statistically distinguish these from standard reminders. More recently,
+Nathan et al. (2024) have found similarly that property taxpayers in the USA are more likely to
+pay when they perceive that others pay as well.
+We also contribute to the literature on public finance in developing countries (Jensen et al.,
+2024; Okunogbe and Tourek, 2024), building on sparse evidence of public disclosure policies.
+Most closely related, Slemrod et al. (2022) use a natural experiment in Pakistan to study the
+effect of publishing taxpayer names along with their self-reported taxable income by comparing
+those who have a more versus less common name. They find that self-reported income increases
+when the reported amount is publicly salient. On the other hand, our study compares reporting
+delinquents versus recognising compliers, thereby allowing us to tease out shame in delinquency
+from privacy costs. Slemrod et al. (2022) find a positive effect of recognising and rewarding the
+top 100 taxpayers in Pakistan. However, they are unable to compare with an equivalent reporting
+policy and the program combines public recognition with other material privileges. Further, our
+experiment is designed to test not only the direct effect of public disclosure, but also the indirect
+effect of disseminating the information, which we show to be quantitatively important in our
+setting.8
+Finally, there is an active literature on various policies aimed to raise property tax compliance
+in African cities, such as lowering the tax rate (Bergeron et al., 2024); using chiefs as collectors
+(Balan et al., 2022); algorithmic property valuation (Knebelmann et al., 2024); and text-message
+nudges (Collin et al., 2021; Cohen, 2024), and we are the first in this literature to study the effects
+of public disclosure policies. Further, we benchmark our direct effects against other types of
+tax morale ‘nudges’ to compare easily substitutable policies. In benchmarking we corroborate
+existing literature that finds a positive effect of enforcement reminders (Brockmeyer et al., 2023;
+Cohen, 2024; De Neve et al., 2021; Dwenger et al., 2016; Castro and Scartascini, 2015).
+The remainder of this paper is organized as follows. In Section 2, we present background
+evidence on the property tax, compliance, and enforcement capacity in Kampala that informs
+our study. In Section 3 we outline key mechanisms through which public disclosure policies
+may affect compliance and their relevance in the Kampala context. In Section 4, we detail our
+experimental sample, design, estimation strategy, and main outcomes of interest. In Section
+5, we develop a model of tax evasion to help interpret our findings. Our empirical results and
+their discussion are presented in Section 6. Section 7 explores potential alternative explanations,
+external validity, and policy implications of our results. Section 8 concludes.
+8Some studies in developed countries have considered indirect effects (Blaufus et al., 2017; Wenzel, 2005;
+Perez-Truglia and Troiano, 2018), but, as far as we know, our study is the first to use experimental variation in the
+field to separately identify indirect effects on a large population of information recipients.
+
+5
+
+2
+
+Property taxes in Kampala
+
+Property taxes can offer a significant source of funding for city governments in low-income
+settings who are faced with limited municipal revenues, rapidly growing populations, and rising
+demand for urban public services. Property taxes play an important role in revenue collection
+for the Kampala Capital City Authority (KCCA), contributing 47% of own-source revenues in
+FY 2021/22. As shown in Figure A1, property tax revenues far exceed revenues from all other
+collection instruments at the KCCA’s disposal.
+The property tax in Kampala is called “Property Rates”. It taxes a share (6%) of a property’s
+“Rateable Value”, which is a professional assessor’s estimate of the typical rental income for a
+property with given characteristics, minus a fixed proportion to account for vacancies.9 Taxing
+rental value, rather than capital value, is common practice in Africa with Franzen and McCluskey
+(2017) identifying 26 of 55 countries doing so.
+Property Rates are applied to all rented residential, commercial and institutional properties
+across the five urban divisions of the city. Owner-occupied properties are exempt, so our study
+population is exclusively landlords who earn rental income from their property. This is also fairly
+common practice in Africa, with four countries that fully exempt and another six that partially
+exempt primary residences out of the 26 mentioned above (Franzen and McCluskey, 2017).
+From our baseline survey, the median property owner’s liability is 2.1% of their household total
+income, and 5% of their household rental income.
+The property tax roll had been limited to a relatively small set of properties. However, from
+2016 to 2019, the KCCA expanded the property tax net through mass enumeration, addressing,
+and valuation of properties in the city. In this process they collected ownership information, GIS
+coordinates, and property attributes for over 300,000 properties in the city. This lead to growth
+of the relative importance of property rates in revenue collection (see Figure A1 panel b).
+Property Rates collections are conducted on an annual basis. A bill is produced for each
+tax-owing property in July and payments are made through a digital system called ‘eCitie’. Due
+to historical and political reasons there are two recognized deadlines. Effectively the KCCA
+encourages payments before Dec. 31st in their communications, but penalties and interest are
+only charged on payments made after June 30th. To communicate with taxpayers the KCCA
+uses phone calls, e-mails, and in-person visits, but primarily SMS text-messages. Typically their
+campaigns are more targeted and so our study is the first time that the KCCA has implemented a
+city-wide SMS tax payment reminder campaign over the course of several weeks.
+9There are some exceptional cases where property rates are not based on rental value, but rather business income.
+These special cases occur when the property owner runs a business from their own property. The most common
+cases of these are high end hotels, hospitals, and gas stations.
+
+6
+
+2.1
+
+A compliance challenge
+
+Despite its importance for KCCA own-source revenues, compliance rates with the property
+tax are very low. Each year from 2019 to 2021, only 10-11% of properties paid their annual
+liability.10 While low, Kampala is not an outlier for cities in low-income countries. Figure A2
+plots compliance rates for property taxes in a select set of cities around the world where studies
+are available. Kampala’s compliance rate is similar to that of cities in other African countries,
+and while cities in Latin America tend to perform better their compliance does not exceed the
+60% mark.
+Revenue collection figures look more encouraging than compliance rates since compliance is
+positively correlated with liability. In Figure A3, we plot actual and potential revenue collection
+by ventiles of property value over the years 2019-2021. It is apparent that the highest value
+properties contribute the largest share of revenue. In sum, the KCCA has collected 39% of the
+potential revenue from property taxes over this period.
+
+2.2
+
+Weak capacity for enforcement
+
+While there are many different factors that may affect a taxpayer’s decision to pay taxes, the
+literature agrees that enforcement capacity is the dominant determinant of compliance (Luttmer
+and Singhal, 2014; Slemrod, 2019). Cities in low-income countries like Kampala often have
+severely limited enforcement capacity, especially in the face of very low compliance rates that
+would require enforcing penalties on a majority.
+In theory, there are a number of enforcement measures that the KCCA can take once property
+tax payments are not received by the June 30 deadline. First, the city has legal authority to take
+tax delinquents to court to recover the amount by warrant. Second, taxes can be demanded from
+tenants, allowing them to deduct those payments from rent. Third, properties in arrears can be
+locked up to prevent use until payments are made.11 Finally, interest payments are charged to
+properties in arrears.
+However, according to our baseline survey, less than half of taxpayers find the threat of fines,
+court action, or lock ups to be “very important” in making tax payment decisions. This is in
+large part because taxpayers do not see these as credible threats. Of those who did not find these
+measures to be important, 49-62% either believed the KCCA is unlikely to take these actions, or
+that they do not have the legal authority to do so.
+10Unless otherwise noted, statistics in this section come from authors calculations using the administrative and
+survey data outlined in Section 4.3.
+11Property lock-ups to enforce tax payments are typically reserved for commercial properties, and not used on
+residential rentals.
+
+7
+
+3
+
+Public disclosure as a ‘social’ enforcement
+
+Public disclosure is a generally popular tax policy instrument. The OECD (2017) cites disclosure
+as the fourth most used instrument of tax debt enforcement in developed countries behind:
+obtaining a lien over assets; initiating bankruptcy or liquidation; and imposing a liability on
+company directors for company tax debts, and ahead of: temporarily closing a business or
+withdrawing a license; denying access to government services; and imposing restrictions on
+international travel.
+In contexts of low compliance and limited enforcement capacity, policy makers are exploring
+the potential for public disclosure as a low-cost means to raise compliance. Examples include
+efforts by the Federal Board of Revenue in Pakistan to publish total amounts of tax paid
+by companies and individuals, and reports by the Philippine’s Department of Finance on
+the 500 highest contributing taxpayers (Nakayama, 2021). In Uganda, the Uganda Revenue
+Authority conducts an annual public disclosure of income taxpayers, which includes a Taxpayers’
+Appreciation Awards ceremony as well as publicized information on top taxpayers. Public
+disclosure schemes also go beyond raising tax revenues, e.g., water usage during droughts has
+been publicized in an effort to enforce lower consumption in South Africa (The Conversation,
+2018). Our project was initiated after the Research Division at the KCCA proposed public
+disclosure as a new policy instrument to improve property tax compliance in Kampala.
+We consider three possible mechanisms through which public disclosure can affect property
+tax compliance: shame in delinquency or pride in compliance, a preference for tax privacy, and
+the effect of information dissemination on compliance beliefs and tax morale. Here we outline
+these, and discuss their relevance in the Kampala context.12
+
+3.1
+
+Shame in delinquency or pride in compliance
+
+Perhaps the main mechanism through which public disclosure policies are thought to operate is
+the shame of delinquency, or pride in compliance. When their tax delinquency is made public,
+tax delinquents may feel that this heightens the expected social sanctions they will face from
+members of the public. Similarly, when tax compliance is made public, tax compliers may feel
+that this heightens the expected social gains they receive.
+This positive social recognition of compliance is consistent with experimental findings
+from Church taxes in Germany (Dwenger et al., 2016). However, it is possible that the norms
+are entirely different in other contexts - particularly where compliance rates are very low and
+service provision limited as they are in many African cities. In theory, it could even be that
+net social sanctions are actually imposed on compliers rather than delinquents. These type of
+12There is no clear ‘whistle blower’ channel for property taxes (whereby third parties can inform tax authorities
+about discrepancies in reported tax liability) because the liability is known to the government. In other contexts
+public disclosure can also affect incentives to truthfully report tax liabilities, e.g. for self-reported income tax
+(Slemrod et al., 2022).
+
+8
+
+anti-compliance norms may exist if for instance, people are ashamed to be seen as one of the few
+‘suckers’ who pay their taxes in a population of delinquents.
+In our baseline survey, we asked respondents questions relating to social norms around
+compliance and delinquency. More than 70% of respondents considered not paying property
+rates “wrong but understandable”. When asked explicitly about social gains to tax compliance,
+the modal response is that taxpayers are ‘very unlikely’ to gain respect if they are known to pay,
+and the majority believe that it is ‘very unlikely’ for a known delinquent to face social costs (see
+Figure 1a). This suggestive evidence that tax compliance norms in our context are weak, and so
+we may expect the shame and pride mechanisms in the effects of public disclosure policies to be
+muted.
+
+3.2
+
+Preferences for tax privacy
+
+In disclosing tax compliance or non-compliance, an individual’s taxable status is also disclosed.
+In the case of Kampala, this may be a pertinent issue since ownership of rental properties is not
+widely known - there is no public database of property owners in Kampala and almost half of
+the respondents in our follow-up survey noted that property ownership may be kept secret even
+from family inside the household (see Figure A5).
+Having ownership made public could be seen as beneficial. It may signal wealth and raise a
+taxpayer’s perceived social status. As respondent #302 noted in our follow-up survey, “people
+want to associate with someone who has something”. Public knowledge may also enhance
+security of ownership in a context where, according to our baseline survey, 45% of taxpayers
+do not have documented proof of property ownership such as land titles, property transfer
+certificates, tax receipts, rental contracts or utility bills.
+However, ownership publication could also result in costs. For instance, through additional
+taxation in the form of pecuniary or in-kind demands from family or other social connections. As
+noted by follow-up respondent #352, “When they know you are the owner of that building, the
+family is on your neck”. This type of mechanism has been studied in many African contexts (e.g.
+Baland et al., 2011; Jakiela and Ozier, 2015; Squires, 2024; Macchi, 2023; Riley, 2024; Carranza
+et al., 2025) but not in the context of formal taxation. Other examples include double-taxation,
+“[the Ugandan Revenue Authority] will come to ... impose more tax” (resp. #22721), and
+heightened risk of property crime.
+So while the norms around compliance and delinquency appear to be weak, there is good
+reason to believe that taxpayers may perceive costs to having ownership of rental properties made
+public. In Section 6.1 we will see that this is consistent with our main experimental findings of
+direct effects.
+
+9
+
+3.3
+
+Compliance beliefs and morale
+
+The primary aim of public disclosure policies is to incentivize taxpayers to comply by threatening
+to publish their delinquency or publicly recognize their compliance. However, the publication
+of tax behavior has the potential to induce indirect effects through the act of dissemination. A
+plausible story exists where public dissemination causes the recipients of this information to
+update their beliefs about compliance of others in their city. Compliance beliefs may in turn
+affect compliance because of an intrinsic motivation in knowing that others pay, or because the
+compliance of others provides a signal about the likelihood of enforcement against delinquency.
+If public dissemination sends an informative signal about the compliance of others, its effects
+will depend on baseline compliance beliefs. If taxpayers already have accurate beliefs, providing
+information is unlikely to affect their behavior. Information about the compliance rate may
+improve their tax morale if they are pessimistic, whilst information may demotivate them from
+paying their taxes if they are overly optimistic. In Kampala, perceived compliance at baseline is
+low, but still substantially overestimates the actual compliance rate. Figure 1b plots histograms
+of beliefs about compliance from our baseline survey. The average belief for city-wide property
+tax compliance is just under 50% compliance, much higher than the true 10% rate. Respondents
+correctly believe that compliance is higher for wealthy taxpayers, but overall remain substantially
+optimistic relative to the true 22% rate. Since prior beliefs are highly optimistic and taxpayers
+report that they are positively influenced by the compliance of others, informative signals about
+compliance could lead them to update their beliefs downwards.
+This downwards updating of beliefs could lead to demotivated taxpayers who lower their
+compliance. Taxpayers may be influenced by the behavior of particular groups of taxpayers - the
+wealthy, celebrities, or politicians, for example - or simply by general compliance in the city.
+Both of these appear to be true in Kampala - 78% of taxpayers in our baseline survey completely
+or somewhat agreed that they would be more likely to pay their taxes if they knew that the
+majority of properties in Kampala were paying their share. Additionally, 70% completely or
+somewhat agreed that they would be more likely to pay their taxes if they knew that wealthier
+and more influential individuals were paying their taxes.
+In Section 6.2 we will see that this causal chain – where dissemination treatments affect
+compliance beliefs which in turn affect compliance – is consistent with our experimental findings
+of indirect effects.
+
+4
+
+Experimental design and estimation strategy
+
+We designed an experimental intervention in collaboration with the KCCA Directorate of
+Revenue Collection to achieve two broad research aims. First, to separately identify the effects
+of publicly reporting delinquents (the “stick”) from those of publicly recognizing compliers
+(the “carrot”). To do so, we randomly assign property owners to sub-treatments that vary by
+10
+
+disclosure type (reporting or recognition). Second, to separately identify the direct effect of
+public disclosure on those warned their behavior will be made public from the indirect effect of
+publicly disclosing this information on other’s behavior. To do so, we stagger our experiment
+across two waves and cross-randomize our treatments so that direct effects are tested in wave
+one (May-June 2021), and indirect effects are tested in wave two (Nov-Dec 2021). Table A1
+gives the full study timeline.
+Outcomes are measured at the property level, so the observational unit is the property.
+However, randomization was clustered at the phone number level so that all properties with the
+same phone number receive the same treatment. In our empirical analysis we always cluster
+standard errors at the phone number level. We block-randomized, stratifying wave one treatments
+into 40 strata based on ventiles of total property value and a dummy for whether tax was paid at
+baseline (2019/2020) for at least one of the properties. The second wave additionally adds the
+eight treatment groups from wave one to give a total of 320 strata. We use machine randomization
+to generate lists of properties for each treatment group. Lists were uploaded by staff at the KCCA
+to automatically send treatment messages through their standard SMS communication system.
+Six weeks in advance of a payment deadline, an initial standard message is sent out for
+each property (multi-property owners receive multiple standard messages) in both English and
+Luganda. This message is identical regardless of the treatment group and notifies the recipient
+of the amount due on the property as well as the deadline for payments. As a reminder, the
+standard message is sent again with two weeks remaining until the deadline. The exact wording
+and translations of the standard message and all other messages can be found in Tables A2 and
+A3. Experimental variation is introduced through a set of follow up messages. In both waves,
+each property owner receives three text messages corresponding to their treatment group sent
+periodically up until the deadline. The following sections describe these treatment messages and
+their content.
+
+4.1
+
+Direct Effects: randomizing notice of public disclosure
+
+The first intervention focuses on the direct effects of public disclosure by randomly varying the
+type of disclosure an individual will face. Property owners are assigned to one of three broad
+groups: Control, Public Disclosure, and Benchmark Nudges. The Public Disclosure group is
+split into Reporting and Recognition, which are each split further by the mode of disclosure (SMS
+or an online list). The Benchmark Nudges group is split into three subgroups: Enforcement,
+Reciprocity, and Relationship Management. Figure 3a gives a diagram of the treatments arms.
+Here we summarize the content of wave one treatment messages (see Table A2 for the full
+set of English and Luganda messages). First, a Standard message is sent to all groups. Following
+this, reach group receives a message every 2 weeks until the deadline. The Control group
+receives an SMS reminder to pay by the deadline:
+Dear [customername], Please remember to pay your overdue property
+rates in the next [6/4/2] weeks. Thank you KCCA
+11
+
+The Reporting group is notified that the KCCA will publicly report them as a defaulter if they do
+not pay their taxes on time, e.g. in the Web sub-treatment:13
+Dear [customername], If you do not pay your property rates within
+[6/4/2] weeks KCCA will REPORT you as a DEFAULTER and share your name
+and parish on kcca.go.ug/reporting citizens. Thank you KCCA
+The Recognition group is notified that the KCCA will publicly recognize their contribution if
+they do pay their taxes on time, e.g. in the SMS sub-treatment:
+Dear [customername], If you pay your property rates within [6/4/2]
+weeks KCCA will RECOGNISE your CONTRIBUTION by posting your name and
+parish publicly on kcca.go.ug/honouring-citizens. Thank you KCCA
+Finally, as detailed in Table A2, the Benchmark Nudges groups are sent different types of
+information messages: on enforcement measures the city can implement, on public services
+property rates contribute to, and on details of client relationship managers that taxpayers can
+contact with any issues.
+4.1.1
+
+Direct Effects: Estimating equation
+
+The empirical specification for estimating direct effects is given below:
+𝑦𝑖 =𝜏𝑆 reporting𝑜(𝑖) + 𝜏𝐻 recognition𝑜(𝑖)
+
+(1)
+
++ 𝛾1 enforcement𝑜(𝑖) + 𝛾2 reciprocity𝑜(𝑖) + 𝛾3 relationship management𝑜(𝑖)
++ 𝜂 𝑠1 (𝑜) + 𝜖𝑖
+where 𝑦𝑖 is one of the outcomes outlined in subsection 4.4 for property 𝑖. The terms reporting𝑜(𝑖) ,
+recognition𝑜(𝑖) , enforcement𝑜(𝑖) , reciprocity𝑜(𝑖) , and relationship management𝑜(𝑖) are all dummies for treatment assignment to owner 𝑜 of property 𝑖. Finally, 𝜂 𝑠1 (𝑜) are fixed effects for the
+wave one strata 𝑠1 that owner 𝑜 falls into, and 𝜖𝑖 is an error term for property 𝑖.
+Our main parameters of interest are 𝜏𝑆 and 𝜏𝐻 , i.e. the effects of reporting and recognition
+respectively. We are also interested in 𝛾1 , 𝛾2 , and 𝛾3 to benchmark 𝜏𝑆 and 𝜏𝐻 against effects of
+standard nudges. We also consider alternative specifications that estimate heterogeneous effects,
+or effects for subgroups.
+
+4.2
+
+Indirect Effects: randomizing public dissemination
+
+The second intervention focuses on indirect effects by randomly varying the type of tax behavior
+disseminated. Property owners are assigned to one of two broad groups: Control, or Public
+Dissemination which is split into three. The first two, Delinquents List and Compliers List,
+13Note that the webpages are no longer live as they were removed following the project evaluation.
+
+12
+
+receives names of tax delinquents or compliers from wave one.14 A third group, Wealthy
+Compliers List, receives names of compliers from wave one who have paid at least 2mn UGX
+(which represents the top 5% city-wide property wealth).15 Figure 3b gives a diagram of the
+treatment arms.
+Here we summarize the content of wave two treatment messages (see Table A3 for the full
+set of English and Luganda messages). First, a Standard message is sent to all groups. Following
+this, reach group receives a message every 2 weeks until the deadline. The Control group
+receives an SMS reminder to pay by the deadline:
+Dear [customer name], Please remember to pay your property rates by
+Dec 31. Thank you KCCA
+The Delinquents List receives messages explaining that owners who did not pay in the previous
+year are being reported and given lists of these owner names and parishes, e.g. in the Online-City
+sub-treatment:
+By paying property rates, you contribute to essential services for the
+city. KCCA is publicly reporting on your neighbours who DID NOT pay
+their balance last year. Visit this link for a list of these
+non-compliers: kcca.go.ug/reporting-citizens. Thank you, KCCA
+The Compliers List receives messages explaining that owners who did pay in the previous year
+are being publicly recognized for their contribution, and given lists of these owner names and
+parishes,16 e.g. in the Online-City sub-treatment:
+essential services for the city. KCCA is publicly recognising the
+contribution made by property owners who PAID their balance last year.
+Visit this link for a list of these citizens:
+kcca.go.ug/honouring-citizens. Thank you, KCCA
+Importantly, the actual lists of names contain only individuals who were assigned to the relevant
+reporting or recognition treatment group in wave one, and have therefore been warned.
+4.2.1
+
+Indirect Effects: Estimating equation
+
+The empirical specification for estimating indirect effects is below:
+𝑦𝑖 =𝜅 𝑆 delinquents𝑜(𝑖) + 𝜅 𝐻 compliers𝑜(𝑖) + 𝜂 𝑠2 (𝑜) + 𝜖𝑖
+
+(2)
+
+14We focus on these two, but they are also further split into three sub-groups. First, around 15 names of randomly
+sampled neighbors (3 messages each with around 5 different names). Second, around 15 names randomly sampled
+from the city as a whole (again 3 messages each with around 5 names). Third, an SMS link to complete lists for the
+whole city on a webpage.
+15There is no Wealthy Delinquents List. The wealthy are just as likely to be disclosed, but we were unable
+to publicize the wealth status of reported delinquents. We treat it as a third group to keep the Delinquents and
+Compliers List treatment groups compositionally comparable.
+16Notably the treatments in wave two contain a preface “by paying property taxes, you contribute to essential
+services for the city” that is not in the control group. The KCCA considered this necessary to give a clear motivation
+why compliers would be recognized and delinquents reported. Since the ‘reciprocity’ benchmark effect is a very
+precise zero in wave one there is less concern that this would bias our wave two estimates.
+
+13
+
+where the terms delinquents𝑜(𝑖) and compliers𝑜(𝑖) are dummies for treatment assignment for
+owner 𝑜 of property 𝑖, and 𝜂 𝑠2 (𝑜) are fixed effects for wave two strata 𝑠2 . Our main parameters of
+interest are 𝜅 𝑆 and 𝜅 𝐻 , i.e. the effects of receiving lists of delinquents and compliers respectively.
+We also consider alternative specifications for heterogeneous effects, effects for subgroups and
+the distinct Wealthy Compliers List group.
+
+4.3
+
+Data and Sample
+
+4.3.1
+
+Administrative data
+
+We use administrative data from the Kampala Capital City Authority (KCCA) to create our
+primary outcomes of interest, baseline covariates, and sampling frame. These are data extracts
+from the property owner registry, annual property bills, and property rate payment histories
+from the KCCA eCitie tax database. Appendix Figure A6 provides a map of property density,
+villages, and parishes in Kampala.
+The main sample that we use in this study is based on the set of properties for which we
+have administrative data. We take all properties that had a positive tax balance due by the next
+deadline date as of the start of our interventions.17 Recall that property rates are billed and paid
+on an annual basis, but there are effectively two deadlines within each year. Wave one of our
+survey is conducted up until June 30 2021, the second deadline of the 2020/2021 fiscal year.
+Wave two is conducted up until Dec. 31 2021, the first deadline of the 2021/2022 fiscal year. So
+all properties in wave two have had new bills issued since the end of wave one, i.e. payments in
+wave one do not mechanically affect whether a property has an outstanding bill at the start of
+wave two. At the start of wave one 5.8% of properties had paid their balance for that financial
+year (2020/2021) and at the start of wave two 4.4% of properties had paid their balance for that
+financial year (2021/2022).
+Given that our two experimental interventions are conducted before a different deadline for
+property tax payments, for wave one, we select properties with a remaining balance on May 14th
+2021 from their bill in July 2020, and for wave two we select properties with a remaining balance
+on Nov. 17th 2021 from their bill in July 2021. We discarded properties that had recorded
+official objections to their valuations that had not yet been resolved in court. This leads our wave
+one and wave two samples to differ slightly; at wave one we have 174,304 properties and at wave
+two we have 176,762 properties.
+The registry includes all property owners in Kampala and each is identified with an ID called
+COIN. The registry records contact information for the property owner: first and last name, or
+name of legal entity (when relevant), phone number, and village of residence. The bills are
+created every year on July 1st for each taxable property identified with an ID called propertyno.
+The bills record the rateable value of the property, the annual liability (which is 6% of the rateable
+17Note that for this reason, in our estimating samples the control group mean compliance rate is around 4-5%
+while the full compliance rate is closer to 10-11%.
+
+14
+
+value) and the outstanding balance. The payment histories record the amount and date of each
+payment made towards a property. Both bills and payments are extracted for the entire study
+period starting from the 2019/2020 financial year. We match owners from the registry to bills
+by COIN, and then bills to payments by propertyno. Further, each property has an ID called
+CAMVID that links to characteristics of the property collected for the Computer-Assisted Mass
+Valuation (CAMV) programme. These characteristics include the propertys location (parish,
+village, and GPS coordinates), type (residential, commercial, institutional, etc.) and other
+property features. Appendix Table A4 has full definitions of all administrative data variables
+used in our analysis.
+4.3.2
+
+Baseline survey
+
+In November and December 2020 we conducted a baseline survey with 1,172 property owners that
+were assigned to our control or public disclosure treatments (about 2% of the full sample) to collect
+information on their baseline characteristics, behaviors, and beliefs. To create a representative
+sample, we randomly sampled taxpayers from the KCCA registry. The randomization was
+stratified by total property value, past compliance, and wave 1 treatment. We completed 1,180
+surveys after having approached a total of 2,073 taxpayers. This data is used to run descriptive
+statistics of the property tax context in Kampala (Section 2).18 As can be seen in Table A5
+column 1, among the random sample approached, our baseline survey respondents are somewhat
+selected to be higher value properties, and in areas with lower population density.
+4.3.3
+
+Endline survey
+
+In January and February 2022, after both waves of treatments had been completed, we conducted
+an endline survey with 4,960 property owners (about 5% of the full sample). By providing a
+sub-sample with proximate outcomes like beliefs, this data will be used to complement our main
+analysis which uses the full sample of administrative data. To create a representative sample, we
+randomly sampled taxpayers from the KCCA registry. The randomization was stratified by total
+property value, past compliance (a dummy if the property paid at least their annual liability in
+the 2019/2020 financial year), and wave 1 and wave 2 treatment groups.
+We completed 4,960 surveys after having called a total of 8,525 taxpayers. Of the 3,853
+that we were unable to survey, 63% never answered phone, 22% claimed not to be the correct
+person from the KCCA database, and 13% refused to be surveyed. The endline survey is used
+to create an important sample in our analysis. For specifications where we use outcomes from
+our endline, we use the same main sample as outlined for the administrative data, but further
+restrict properties to those owned by an owner that was selected for and completed our endline
+survey. This implicitly means that non-valid phone numbers and unanswered phone calls are
+18The baseline survey is not large enough to conduct heterogeneity analysis of our main results.
+
+15
+
+excluded from our endline samples, but not from our main sample. Appendix Table A6 has full
+definitions of all endline survey data variables used in our analysis.
+In Table A5 column 2 we investigate whether attrition in the endline survey is correlated
+with characteristics. This sample includes both those who are ultimately in the survey data, and
+those who were approached but did not complete a survey. From here we can see that individuals
+who had paid their taxes the year previously were about 8 percentage points more likely to be in
+our endline survey. None of the other baseline characteristics are significantly correlated with
+attrition. We take three steps to address selection bias due to attrition in our endline survey. First,
+for all of our results using the endline survey outcomes, we have confirmed robustness to Inverse
+Probability of Attrition Weighting.19 Second, results in Table A7 Column 2 demonstrates that
+none of our treatments have a significant effect on endline attrition. Third, our main results with
+the administrative data hold even when restricted to the endline survey sample, as is shown in
+the results below.
+4.3.4
+
+Follow-up survey
+
+In April 2024 we conducted a final follow-up survey with 56 property owners across Kampala
+city that were assigned to our public disclosure treatments to better understand mechanisms
+underlying results. We talked to these taxpayers in detail about costs and benefits to public
+knowledge of ownership, tax delinquency, and tax compliance, and their reactions to our
+experiment messages. This survey involved a combination of quantitative questions and open
+discussion both of which we use as detailed descriptive evidence on perceived social costs and
+benefits of public disclosure. A representative list of respondent quotations is in Appendix
+Section E. Our respondents were sampled by randomly selecting 20 parishes stratified by four
+different types - either high or low mean property value, and either from Central areas of the
+city or from the districts on the outskirts. From these parishes we invited a random selection of
+property owners to attend our follow-up survey.
+
+4.4
+
+Outcome measures
+
+4.4.1
+
+Outcomes from administrative data
+
+Our main outcome in both waves is tax compliance and we measure it in three different ways: 1)
+an indicator if total payments made in the treatment period covered at least the annual liability of
+the property, 2) an indicator if any payment was made towards the property during the treatment
+period, and 3) the share of the annual liability made in payments towards the property in the
+treatment period. All of these outcomes are scaled by 100 so that they can be interpreted as
+percentage points.
+19With weights estimated by a logit regression on the baseline characteristics in Table A5.
+
+16
+
+4.4.2
+
+Outcomes from survey data
+
+We use our endline survey to measure more proximate outcomes for a sample of properties.
+Here we focus on five taxpayer sentiments: 1) belief about the compliance rate of properties
+in Kampala as a whole, 2) belief about the compliance rate of owners with the most expensive
+properties in Kampala, 3) belief about the compliance rate of owners in the same village as the
+respondent, 4) belief that the KCCA can detect who pays tax, and 5) belief that the KCCA acts
+in the best interest of its citizens. All of these outcomes are scaled so that they can be interpreted
+as percentage points.
+
+4.5
+
+Pre-treatment balance
+
+Tables A8 and A14 report balance tests for effects of treatments in the first and second waves on
+baseline property characteristics. For each row of the table we regress a baseline variable on
+treatment indicators. Inevitably some treatment coefficients are significantly different from zero,
+so we also conduct a joint orthogonality test following Özler et al. (2018). We first estimate
+a Multinomial Logit where the dependent variable is the vector of wave one treatments, the
+explanatory variables are the baseline characteristics, and the base group is the control group.
+Then for each treatment group, we test the null that the coefficients are jointly zero. The p-values
+are given in the bottom row of the tables and across both tables the p-values are generally large
+and not significant at the 10% level.20 We further conduct the tests for Reporting vs Recognition
+in wave one and Delinquents List vs Compliers List in wave two and these p-values, reported in
+the table footnotes, are also large. Further, as discussed in Bruhn and McKenzie (2009), even
+small imbalance can be problematic if the variable is highly correlated with the outcome of
+interest. So, we also demonstrate robustness of our main results to inclusion of all baseline
+variables as controls (see Tables A9 and A15, discussed below).
+
+5
+
+Modeling evasion under social image concerns
+
+Here, we provide a simple structural framework to interpret our empirical estimates of the direct
+effects of public disclosure, drawing on the Allingham and Sandmo (1972) model of tax evasion
+and following Bursztyn and Jensen (2017) to incorporate social image effects. More details are
+provided in Appendix Section C.
+Tax-liable property owners get utility as a function of their decision to evade, 𝑒 ∈ {0, 1}.
+Evasion can affect utility through social payoffs and other payoffs including monetary penalties
+and intrinsic motivation. Utility can be expressed as: 𝑈 (𝑒) = 𝑢 0 + 𝑠0 + 𝑒(𝑢 + 𝑠) + (1 − 𝑒)𝑣,
+where 𝑠 is the net expected utility if choosing to evade from social image effects and from other
+20One exception is the ‘benchmark’ sub-treatment Reciprocity group in wave one. Because we have multiple
+treatment arms we may over-reject the null in this case. Notably, if we pool all three benchmark treatments together
+the corresponding chi-square test is not significant at the 10% level.
+
+17
+
+sources is 𝑢, and the idiosyncratic preference for compliance 𝑣 with CDF 𝐹 (𝑣). Property owners
+will choose to evade if 𝑣 < 𝑢 + 𝑠 and so the aggregate evasion rate is 𝜆 = 𝐹 (𝑢 + 𝑠).
+We focus on two types of social payoffs, the payoff to being perceived as an owner of rental
+properties, 𝑠 𝑜 , and the payoff to being perceived as a property tax delinquent 𝑠 𝑑 . Property owners
+care about the expected payoffs, so compliance decisions also depend on the probability that
+an individual is publicly known as an owner of rental properties, 𝑝 𝑜𝑒 , and the probability that
+an individual is known as a property tax delinquent 𝑝 𝑒𝑑 . Public disclosure policies disclose an
+individual’s type, 𝑡 = (𝑜, 𝑑), with probability 𝜃, and therefore affect compliance decisions by
+altering 𝑝 𝑜𝑒 and 𝑝 𝑒𝑑 . If an agent is not discovered through a public disclosure program, they face
+baseline probabilities denoted with an underline, i.e. 𝑝 𝑜 and 𝑝 𝑑 . Assuming social payoffs are
+𝑒
+𝑒
+additively separable in utility (Gordon, 1987), this gives us a structural equation for the aggregate
+evasion rate:
+𝜆 = 𝐹 (𝑢 + [ 𝑝 1𝑜 − 𝑝 0𝑜 ]𝑠 𝑜 + [ 𝑝 1𝑑 − 𝑝 0𝑑 ]𝑠 𝑑 )
+
+(3)
+
+To evaluate the effects of public disclosure policies on the aggregate evasion rate we make
+some further key assumptions: that public disclosure policies induce a small enough change in
+expected payoffs that their effect on compliance can be approximated by a first order Taylor series,
+that being discovered through our public reporting treatment is equally likely as through public
+recognition (𝜃 𝑆 = 𝜃 𝐻 ≡ 𝜃)21, that type is known for certain conditional on being discovered, and
+that deciding to evade in the control group (i.e. in the absence of public disclosure) does not
+affect the likelihood of being perceived as a property owner (𝑝 𝑜 ≡ 𝑝 𝑜 ). As detailed in Appendix
+𝑒
+Section C, with these assumptions the model implies that, relative to the control group, the direct
+effect of public reporting 𝜏𝑆 and public recognition 𝜏𝐻 on compliance can be expressed as:
+𝜏𝑆 = − 𝜃 [𝑠 𝑜 (1 − 𝑝 𝑜 ) + 𝑠 𝑑 (1 − 𝑝 𝑑 )]𝐹 0
+
+(4)
+
+𝜏𝐻 = − 𝜃 [−𝑠 𝑜 (1 − 𝑝 𝑜 ) + 𝑠 𝑑 𝑝 𝑑 ]𝐹
+
+(5)
+
+1
+0
+
+0
+
+where underscores denote baseline (control group) probabilities and 𝐹 0 > 0 is the derivative of
+the distribution of idiosyncratic preferences for compliance.
+Intuitively, effects will be zero if there is no chance of being discovered through the public
+disclosure scheme (i.e. 𝜃 = 0), or if there is no variation in the idiosyncratic motivation to
+comply near the baseline state (i.e. 𝐹 0 = 0). Notably however, the effect of public reporting or
+recognition alone confounds the social image payoffs 𝑠 𝑜 and 𝑠 𝑑 . To isolate the role of social
+21So long as taxpayers believe that the discovery rate is the same under both regimes then this assumption is
+valid. We cannot test this directly, but we do know from our baseline survey that taxpayers believe the compliance
+rate to be around 50%. So they would expect the pool of compliers and the pool of delinquents to be of similar size,
+and have little reason to expect that they would be more or less visible in one pool over the other.
+
+18
+
+payoffs to delinquency, we can take the sum of effects:
+𝜏𝑆 + 𝜏𝐻 = − 𝜃𝑠 𝑑 [1 − 𝑝 𝑑 + 𝑝 𝑑 ]𝐹 0
+1
+
+0
+
+(6)
+
+where privacy payoffs notably drop out. A positive sum suggests that being perceived as a
+delinquent is costly (𝑠 𝑑 < 0), while a negative sum suggests delinquent status provides some
+gain (𝑠 𝑑 > 0), and a sum of zero suggests there are no net payoffs from delinquent status. In
+Section 6.1 we use this structure to test empirically for delinquency status payoffs.
+
+6
+
+Results
+
+6.1
+
+Direct Effects: estimates of public disclosure
+
+We first test for direct effects of public disclosure on tax compliance. Our main results are
+reported in Table 1 Panel A, following the specification in equation 1 with our three measures of
+tax compliance as outcomes. We show that the results presented here are robust to the inclusion
+baseline controls in Appendix Table A9.
+There are three takeaways on public disclosure effects from Panel A of Table 1. First, the
+direct effect of reporting delinquency raises compliance. Properties whose owners are told that
+tax delinquency will be publicly reported are 0.58 percentage points more likely to pay their
+liability. While small in magnitude, this is a substantial increase of 17% on the control group
+mean of 3.4% (col. 1).22 The percentage change on the control mean is slightly higher (19%) if
+we measure tax compliance as any payment being made (col. 2), or as the share of the property’s
+liability paid (col. 3).
+Second, the direct effect of recognizing compliance lowers compliance. Properties whose
+owners are told that their tax compliance will be publicly recognized are 0.55 percentage points
+less likely to have their liability paid for, a 16% decline on the control group mean (col. 1). The
+percentage decline on the control mean is slightly larger (19%) if we measure tax compliance as
+any payment being made (col. 2), and slightly higher still (20%) measuring compliance as the
+share of the property’s liability paid (col. 3).
+Third, the recognition and reporting effects are opposite signed, but of similar magnitude, i.e.
+𝜏ˆ𝑆 + 𝜏ˆ𝐻 ≈ 0. From column 1, the difference in point estimates is just 0.028 (around 5% of the
+size of either treatment effect) and the p-value for the test that these coefficients sum to zero is
+0.94 (see foot of panel). This finding has important implications in the section that follows.
+22Note that the control group mean compliance is less than the annual rate reported in Section 2. This is due to
+the sample restriction: we exclude properties which have fully cleared their annual balance before our experiment
+began.
+
+19
+
+6.1.1
+
+Linking to the model: what do direct effects tell us?
+
+Treatment effect estimates for both recognition and reporting are both non-zero. Using equations
+4 and 5, this implies that 𝜃 > 0 and 𝐹 0 > 0. Equations 4 and 5 show that each treatment effect
+alone confounds privacy and delinquency status payoffs. To separately identify the two channels,
+we can use equation 6. As discussed above, the sum of the treatment effect point estimates is
+close to zero and we cannot reject that they are zero. Following equation 6, this implies that
+𝑠 𝑑 ≈ 0. Therefore, under the structure of the model, our empirical results cannot reject the null
+hypothesis that there is no shame cost to property tax delinquency on average.
+Returning to equations 4 and 5 with 𝑠 𝑑 = 0, our empirical estimates imply that the social
+payoff to ownership status being known is negative on average.23 Therefore, what is driving the
+direct public disclosure effect is not a social cost to delinquency status being made public, but to
+ownership status being made public (a ‘privacy cost’).
+We investigate this further in our follow-up survey, in which we ask respondents to list any
+possible costs and benefits to compliance and delinquency being made public. While a full 91%
+of interviewed property owners say that they see some costs to being perceived as a delinquent or
+gains to being perceived as a complier, when asked to describe what these costs are, delinquency
+being immoral and compliance being seen as moral are cited by 38% and 43% of respondents
+respectively, four to five times more likely than any other costs or gains (see Figures 2a and 2b).
+Very few respondents cite financial or material costs to delinquency status.24 When asked about
+ownership status being made public, 96% said that there would be privacy costs. Further, when
+describing these costs, kin taxes are the most frequently cited (see Figure 2c). Respondents cited
+financial favours from family outside the home (38%), friends (33%), family inside the home
+(36%) or their spouse (36%). In addition, risk of robbery and risk of violence are each cited by
+23% of respondents. Stated privacy costs appear predominately financial and material in nature,
+which may have greater sway over tax payment decisions as observed in our experiment.
+To summarize, our model, empirical estimates, and descriptive interviews all suggest that
+concerns about the privacy of property ownership, rather than the shame of delinquency, drive the
+direct effects of public disclosure in our context. Disentangling these mechanisms is important
+to understand the underlying tax morale determinants of compliance. In this case, social image
+motivations to comply appear limited.
+6.1.2
+
+Direct Effects: heterogeneity
+
+We have established that our empirical results are consistent with there being no shame cost to
+delinquency on average. It could be that most people’s preferences are similar to this average, or
+there could be heterogeneity. Perhaps some taxpayers feel shame costs, while others see a benefit
+b
+𝜏𝐻
+𝑜
+𝑆
+23e.g. 𝑠 𝑜 = −𝜃 𝐹b𝜏0 (1−
+𝑝) < 0 and 𝑠 = 𝜃 𝐹 0 (1− 𝑝) < 0.
+
+24In addition, we do not find any suggestive evidence of anti-compliance norms. Very few respondents cited any
+costs to public compliance or gains to public delinquency (see Figure A4a and A4b).
+
+20
+
+to being publicly known as a delinquent. We explore treatment effect heterogeneity across three
+key dimensions along which we might expect privacy and shame costs to differ: the value of the
+property, the total value of the owner’s properties, and the local compliance rate (either in the
+village or parish of the property) at baseline.
+Table A10 gives results estimating heterogeneity in treatment effects by tercile of each
+baseline measure. The direct effect of recognition is significantly more negative for the highest
+value properties, while the reporting effect is not significantly different across these terciles (col.
+1). The results are similar along other dimensions (cols. 2-4), though the differential recognition
+effect in the third tercile tends to be weaker. In no cases can we reject the null that the reporting
+and recognition effects sum to zero (our test for shame costs) for any of the terciles. Therefore,
+while there is some indication that shame costs may be relatively more important with lower
+property value or owner wealth,25 we do not have strong evidence for this.
+6.1.3
+
+Comparing Direct Effects with Benchmarks
+
+Returning to Table 1 Panel A, we report estimates of benchmark effects in the bottom of the
+panel. While there is no effect of messages that appeal to reciprocity (reminding taxpayers of
+the services their tax payments contribute to), we do find relatively large effects of enforcement
+reminder messages. Properties whose owners were reminded of legal action that the government
+can take against delinquents are 1.29 percentage points more likely to pay their liability, a 38%
+increase on the control group mean. This is roughly twice the magnitude of the direct effects
+of reporting. These effects are consistent with a growing literature that finds modest positive
+effects of enforcement messages (Brockmeyer et al., 2023; Cohen, 2024; De Neve et al., 2021;
+Dwenger et al., 2016; Castro and Scartascini, 2015). Receiving a relationship management
+message (reminding taxpayers of the contact number to call for any questions or concerns) lowers
+compliance, though point estimates are only marginally significant in columns 1 and 3. We are
+reluctant to over interpret these results, though one explanation for the negative effects could be
+that taxpayers become demoralized when they call with concerns that the KCCA contact cannot
+immediately resolve, e.g. disputing their tax liability rates, or if many calls are simply not picked
+up.
+6.1.4
+
+Direct Effects: sub-treatments and endline beliefs
+
+In addition to the preceding analysis of direct effects, we look at sub-treatment effects by mode
+(SMS vs online disclosure) and find no evidence that the direct effects of public disclosure
+(recognition or reporting) vary by whether disclosure will be online rather than SMS (see
+Appendix Table A11). We also explore whether our treatments from wave one affect endline
+survey beliefs in Appendix Table A12. We find no significant effects of direct effects on these
+25A more negative treatment effect in the top terciles suggests that either privacy costs are larger or shame costs
+are smaller or even negative for this group, and vice versa for those in the bottom terciles.
+
+21
+
+beliefs. It could be that any such effects dissipated over the seven month gap between wave one
+of our experiment and the endline survey conducted after wave two.
+
+6.2
+
+Indirect effects: estimates of public dissemination
+
+In the second wave, we test for indirect effects of public disclosure on tax compliance. Our main
+results are reported in Table 1 Panel B, following the specification in equation 2 with our three
+measures of tax compliance as outcomes. We show that the results presented here are robust to
+the inclusion baseline controls in Appendix Table A15. There are two takeaways on indirect
+effects of public disclosure from Panel B of Table 1.
+First, and perhaps unsurprisingly, the indirect effect of reporting delinquency lowers
+compliance. Properties whose owners received lists of tax delinquents are 0.65 percentage points
+less likely to pay their liability, a 21% decline on the control group mean of 3.1% (col. 1). The
+percentage decline on the control mean is slightly smaller (19%) if we measure tax compliance
+as any payment being made (col. 2), and slightly larger (22%) for share of liability paid (col. 3).
+So, while the threat of being reported induces compliance, disseminating these reports lowers
+others’ compliance. On net, the 0.58pp direct effect from threatening to report delinquency is
+canceled out by the -0.65pp indirect effect from disseminating delinquent lists.
+Second, the indirect effect of recognizing compliers also lowers compliance. Properties
+whose owners received lists of tax compliers are 0.78 percentage points less likely to pay their
+liability, a 24% decline on the control group mean of 3.1 percentage points (col. 1). The
+percentage decline on the control mean is smaller (17%) if we measure tax compliance as any
+payment being made (col. 2) or for share of liability paid (22% from col. 3). Across all columns
+we cannot reject that the Delinquent List and Complier List effects are equal, i.e. 𝜅ˆ𝑆 = 𝜅ˆ𝐻 (see
+p-values at foot of table).
+These results already help rule out some ex ante plausible explanations for negative delinquent
+list effects: that receiving a list of delinquents makes that particular choice more salient, or that
+seeing delinquents demotivates taxpayers. Both of these ‘framing’ explanations would imply
+opposite effects from receiving complier lists. These results also rule out the possibility lists
+signal that tax behavior in wave two will be published. In this case, we would expect indirect
+effects to mirror direct effects, e.g. receiving a list of delinquents should raise compliance.26 We
+discuss plausible explanations for our indirect effects in the next section.
+6.2.1
+
+Indirect Effects: endline survey outcomes
+
+To explore further what could cause both Delinquents List and Complier List treatments to lower
+compliance, we turn to our endline survey which measures more proximate outcomes. Results
+are in Table 2, and here we focus on the sample of properties with an owner responding to our
+26Further, Appendix Table A18 shows small and insignificant effects on the endline belief that tax behavior will
+be published in the future (panel B col 3).
+
+22
+
+endline survey.27 We first discuss results on compliance beliefs in Panel A, and then turn to
+compare these with alternative beliefs (that represent ex ante likely channels) and apply multiple
+hypothesis corrections in Panel B.
+Starting with column 1 of Table 2 Panel A, the estimates of indirect effects on compliance
+show that results from the full sample hold for the survey respondents. In fact, they are about
+2.3-2.5 times larger when compared to Table 1 Panel B column 1.28 As noted above, 39% of
+those sampled either could not be reached by phone or were the wrong person, so the larger
+magnitude could reflect the endline sample mechanically excluding taxpayers with a disconnected
+phone or a wrong number.29
+Columns 2-4 in Table 2 Panel A show indirect effects on compliance beliefs. Delinquent
+Lists cause a decline in beliefs about the city wide compliance rate of −2.3 percentage points (col.
+2) and beliefs about the compliance rate of owners with the most expensive property by −4.6
+(col. 3), but beliefs about the compliance rate in the village is unchanged (col. 4). Receiving a
+list of tax compliers has similar but noisier effects: beliefs on the city wide compliance rate fall
+by an imprecise −1.6 (col. 2), beliefs on the compliance rate of the most expensive properties by
+a precisely estimated −3.5 (col. 3), and beliefs on the compliance rate in their village rise by
+an imprecise 1.3 (col. 4). As we saw at baseline in Figure 1b, the results here suggest overly
+optimistic prior beliefs on compliance: The control group mean belief of the compliance rate
+(col. 2) is 53% versus the actual 10%, and for the compliance rate of the top 5% of property
+owners (col. 3) it is 62% versus the actual 22%. Further, note that control group mean beliefs of
+compliance in their own village are much lower (34%) and we find no evidence of treatment
+effects on this belief. This suggests people are, understandably, better informed about their own
+village and so treatments do not shift beliefs. We return to discuss column 5 at the end of this
+section.
+Clearly, our treatment messages had a causal effect on compliance beliefs, but it is also
+important to consider why. In Section 7.1.3 we discuss how our results are consistent with a
+story where treatment messages provide an informative signal of the true compliance rate and
+initially optimistic taxpayers respond by lowering compliance.
+Moving to Panel B, columns 1-3 repeat the compliance beliefs and we add two additional
+belief outcomes: whether the KCCA has the ability to detect who does and does not pay taxes
+(col. 4) and whether the KCCA acts in the best interests of citizens (col. 5). The former aims to
+capture belief updating on taxpayer legibility to the state (Okunogbe, 2019), and the latter to
+capture changes to the perceived reciprocal relationship with the state (Olken et al., 2022). This
+27Respondents may select into the survey, so we confirm that all results using the endline survey are robust to
+re-weighting to account for attrition as predicted by baseline characteristics (not shown). Specifically, we run all
+specifications applying Inverse Probability of Attrition weights estimated from a logit regression on the baseline
+characteristics in Appendix Table A5.
+28Notably this is still true after applying attrition weights, so baseline characteristics do not fully capture this
+selection.
+29This can explain much of the difference in the point estimates between the two samples, e.g., −1.76 ∗ 0.61 + 0 ∗
+0.39 = −1.06 is close to the −0.78 from Table 1 Panel B.
+
+23
+
+panel tests multiple alternative hypotheses and so we apply corrections for the False Discovery
+Rate (Benjamini et al., 2006). The only estimates with p-values (square brackets) below the
+conventional 5% level of significance are the three significant estimates on compliance beliefs
+from Panel A mentioned above. Once we apply corrections for the False Discovery Rate, only
+the treatment effect of Delinquent Lists on the belief that the rich comply is significant at the 5%
+level (sharpened q-value in curly braces). In sum, our results suggest that a likely channel through
+which Delinquent and Complier lists affect compliance is the proximate effect on compliance
+beliefs, especially of the rich, yet evidence for the effects of Complier lists is weaker.
+The evidence presented in this section suggests a plausible causal chain where public
+dissemination treatments affect compliance beliefs which in turn affect compliance, while other
+intermediate channels are unaffected. This is our preferred explanation as it is most consistent
+with the available evidence, though we also explore alternative explanations in Section 7.1.2.
+With this in mind we embark here on a more speculative exercise of estimating the effect of
+aggregate compliance beliefs on compliance. In Panel A column 5 of Table 2, we estimate
+the effect of compliance beliefs on compliance with an instrumental variables approach. We
+instrument for compliance beliefs using our list treatments under the assumption that treatments
+do not directly affect compliance except through this channel.30 In column 5, raising beliefs
+about compliance of the rich by one percentage point raises own compliance by 0.4 percentage
+points on average. Given the small magnitude of effects in our first stage, the F-statistic is slightly
+low but near 10 (see foot of panel). We consider this suggestive evidence of a “compliance trap”,
+where taxpayers are less inclined to pay when they believe others are not paying (Besley et al.,
+2022).
+6.2.2
+
+Indirect Effects: heterogeneity and sub-treatments
+
+In addition to the preceding analysis of indirect effects, we explore heterogeneity in effects across
+baseline characteristics of properties, owners, and neighborhoods. Table A16 gives results and
+we find no evidence of heterogeneous indirect effects across any of the dimensions we consider
+(property value, owner’s total value, or local compliance rates at baseline). Further, we can never
+reject the null hypothesis that effects of Delinquent Lists are equal to effects of Complier Lists
+within terciles (top rows at foot of table).
+We also look at sub-treatment effects by SMS message content (short list from city, short list
+from neighborhood, and link to full city list) and find no evidence that the indirect effects of
+public dissemination (Delinquent or Complier lists) vary by these sub treatments (see Appendix
+Table A17). It may seem that lists of fifteen names would shift beliefs by less than the online
+sub-treatment where full lists are made available, however, many many recipients would not have
+smartphones and therefore may never have accessed the webpage (which is why the standard
+communication is by SMS). For Complier lists, we also consider the third treatment arm that
+30Our evidence presented above suggests this is at least the case for observable measures.
+
+24
+
+sent lists of compliers sampled only from the wealthiest (top 5%) property owners in the city.
+Our estimates are negative but with large standard errors and we can never reject that it is zero,
+nor that it is different from the effect of receiving a list of random taxpayers. It could be that
+these messages induce a framing effect by highlighting that the wealthy are paying, and so
+this mitigates the demotivation effect that is found from the other lists. We may simply be
+underpowered to detect these effects given this relatively small sub-treatment group.
+
+7
+
+Discussion
+
+7.1
+
+Further interpretations of empirical findings
+
+In this section we expand on our interpretations of some key findings, and explore alternative
+explanations to highlight our preferred interpretation.
+7.1.1
+
+Direct effects imply no shame in tax delinquency
+
+We find average direct effects of public disclosure that are negative if disclosing delinquents and
+positive if recognizing compliers. Our explanation is that, on average, taxpayers aim to avoid
+a negative social payoff to their property ownership status being made public, and that there
+is no motivation from shame in delinquency or pride in compliance. Here, we explore three
+alternative explanations and highlight why our privacy cost explanation is preferred.
+First, perhaps the public imposes costs on both those known as delinquents and those known
+as compliers relative to those whose compliance status is ambiguous. For instance, if the public
+is heterogeneous with some imposing pro-compliance social sanctions on those perceived as high
+probability delinquents and others imposing pro-delinquency social sanctions on those perceived
+as high probability compliers, then agents may wish to be perceived ambiguously to avoid social
+costs from either ‘camp’ in this polarized public. While theoretically possible, we do not find
+much evidence from our endline and follow-up surveys on social costs to being perceived as a
+complier: 93% of respondents in our endline survey believe that not paying property rates that
+are owed is wrong, while only 14% of respondents in our follow-up survey see any costs at all to
+being known publicly as a complier. As such, we see our simpler explanation as more likely.
+Second, perhaps taxpayers interpret both messages as sending a signal about compliance
+rates in the city. Receiving a message that threatens reporting may suggest that non-compliance
+is rare, whilst promising recognition may suggest that compliance is rare. This would still
+suggest no shame costs on average, but provides an alternative explanation to privacy costs for
+what is driving direct effects. However, our follow-up survey suggests privacy costs are likely to
+be present, with 96% of respondents expressing perceived social costs to the public listing of
+property owners.
+A third alternative is that, by receiving a message that promises recognition, taxpayers may
+feel favoured and thus less obligated to pay their taxes (and vice versa for reporting messages).
+25
+
+However, this would imply taxpayers trust this implicit signal above the content of the message
+and we did not hear any evidence of this interpretation in our follow-up survey. Further, as
+discussed below, we do not find evidence of spatial spillovers suggesting that property owners
+are not comparing messages they receive which would be necessary to infer that one is ‘favoured’
+over others.
+7.1.2
+
+Indirect effects lower payments through compliance beliefs
+
+The reduced form effects of receiving either a list of delinquents or compliers on compliance are
+negative according to our estimates. The effects on compliance beliefs are also negative. Above,
+we suggest a causal chain where treatment messages affect compliance beliefs, which in turn
+affect compliance. We argue that treatment messages do not seem to affect compliance through
+alternative channels. Here, we explore alternative explanations in order to highlight why our
+compliance beliefs explanation is preferred. A related, but separate question is why do treatment
+messages affect beliefs? This is discussed in Section 7.1.3.
+First, perhaps compliance beliefs affect enforcement beliefs which in turn affect compliance
+(𝑇 → 𝐶𝐵 → 𝐸 𝐵 → 𝐶), or that 𝑇 → 𝐸 𝐵 → 𝐶𝐵 → 𝐶. We think these are both likely cases
+since compliance and enforcement beliefs are likely to be endogenous (others are complying less
+than I thought so they are probably facing smaller penalties than I thought). Both causal chains
+are consistent with our explanation, and we do not attempt to distinguish these.
+Second, perhaps treatment messages caused taxpayers to believe the KCCA was acting
+unfairly, demotivating them from paying their rates and resulting in lower compliance. However,
+we have already seen in Table 2 Panel B column 5 that estimates of treatment effects on the belief
+that KCCA acts in the interest of its citizens are insignificant and small for Delinquent lists and
+insignificant and even positive for Complier lists. We do find in A18 the belief that ‘compliance
+is better kept private’ increases for the Delinquent List group, which could suggest that these
+lists are perceived as violating privacy. However, we find small and insignificant effects of the
+Complier List on this outcome and so are less able to explain how this mechanism would lower
+payments from both groups.
+Third, perhaps treatment messages negatively signal the KCCA’s ability to detect who does
+and does not pay. Again, we saw Table 2 Panel B column 4 shows insignificant treatment effects
+on the belief that KCCA can detect who pays taxes. In addition, the standard message sends a
+strong signal of this legibility (all recipients are notified of their tax dues by name, regardless of
+treatment).
+Fourth, perhaps indirect effects are driven by a reduction in trust from receiving a published
+list in the second wave was different than the list warned about in wave one, e.g. the negative
+effect of receiving a compliers list is driven by those who were in the wave one reporting group.
+In Appendix Table A20 we look at heterogeneity of indirect effects by the wave one treatment
+groups. For the wave one control group, the effect of receiving a Delinquent List or a Complier
+
+26
+
+list is negative and significantly different from zero, consistent with our main estimates. The
+differential effects are small and insignificant for the groups that received the same framing in
+both waves, and the groups that received different framing across waves. So, this explanation is
+unlikely to have driven our main effects.
+7.1.3
+
+Indirect treatment messages are an informative signal of compliance
+
+Our results are consistent with a story where both Delinquent and Complier Lists provide
+an informative signal of the true compliance rate and, with high baseline overoptimism of
+compliance, cause taxpayers to lower their beliefs downwards towards the truth. Here we discuss
+this in more depth.
+Neither list treatment provides statistics on the compliance rates, so how might taxpayers
+infer that their priors were overestimates? We offer three possibilities. First, even short lists
+of names can be informative for rational bayesian updating in cases where overall compliance
+is low, causing individuals to update their compliance beliefs dramatically when they (likely)
+see an already known complier on these lists.31 While taxpayers are unlikely to update beliefs
+consciously according to Bayesian reasoning, this highlights the information that is potentially
+signaled in such messages.
+Second, a conspicuous lack of statistics itself signal to taxpayers that the KCCA is strategically
+avoiding sharing the true compliance rate, so it must be low. For instance, follow-up survey
+respondent #33404 explains “they could have communicated in percentages those who paid and
+those who did not pay ... like 70%, then you would think that «I may be amongst the remaining
+30% that has not paid. Let me also go and pay.» But from the message, since just a few people
+who paid are listed, it is discouraging.” Finally, it could simply be that the very act of sending
+out lists sends a signal to taxpayers that the city government is going to extreme measures to
+raise compliance, and so current compliance must be low. Notably, in all cases, if recipients
+were more overoptimistic about the compliance of the wealthy, they may respond more strongly
+with respect to these beliefs.
+
+7.2
+
+External validity: “Structured speculation”
+
+This section discusses the external validity of some of our key results. We follow Banerjee et al.
+(2017) to provide “structured speculation” on how our results may differ when our intervention
+31For instance, consider a recipient of the compliers list who knows that there are 70,000 tax-eligible individuals
+and knows 25 specific individuals to be compliers. For simplicity, suppose that they have beliefs over two possible
+states of the world: high compliance (90%) and low compliance (10%), and their prior is that each is equally likely.
+If they receive 15 randomly sampled compliers and none match their 25 known compliers, their posterior belief of
+the high compliance state will rise to just over 51%. If instead at least one matches the 25 known compliers their
+posterior of the high compliance state will fall to only 10%. The latter scenario is expected to occur in about 5% of
+cases because the actual rate of compliance is 0.1, so the average posterior belief of the high state of compliance
+will fall to 49% (one point below the prior). This aligns very closely with results in 2 (col. 2) where the control
+mean compliance belief is 53% and the treatment effect is −2 percentage points.
+
+27
+
+is scaled up, when treatments are assigned to a different population, and when treatments are
+assigned to the same population but in different circumstances. In doing so we aim to make
+precise speculations that apply our practical knowledge built in the field and are falsifiable by
+future research.
+7.2.1
+
+How scalable is the intervention?
+
+The intervention in this paper is effectively implemented at scale (for all of Kampala), but we
+randomize a variety of treatments at the property owner level and so physical or social ‘neighbors’
+may receive differing treatments. If the intervention was scaled up as a uniform treatment then
+results may differ for at least two reasons.
+The first is the potential presence of spillovers and violation of SUTVA. In theory, if there
+were spillovers across treatment groups we might worry about different results if a uniform
+treatment was rolled out across the city. Recent work in Austria found that enforcement letters
+sent to TV license delinquents not only raised compliance of treated individuals, but also for
+neighbors within 50m (Drago et al., 2020). In Appendix Table A13, we present ‘spillover
+tests’ for wave one where we include the shares of neighbors within 50m of a property that
+received a ‘benchmark’, ‘reporting’, and ‘recognition’ message. Having more neighbors with a
+reporting or recognition message does not have a significant effect on compliance. Further, the
+treatment effect estimates are very stable after the inclusion of these controls compared to the
+main estimates in Table 1 Panel A. Similarly for indirect effects in wave two (Appendix Table
+A19).
+A more pertinent issue is that we purposefully designed our study to minimize the chance
+of spillovers, e.g. by targeting the treatments privately to individuals. This limited our ability
+to conduct a more conventional campaign using newspaper, radio, and dissemination by word
+of mouth. If this intervention was implemented by another actor, such as the city government,
+they would not face this concern. Therefore they could initiate much more salient information
+campaigns than we were able to.
+For this latter reason, a uniform scaling of our intervention is likely to be more salient. We
+would speculate that all of our treatment effects, both wave one and wave two, would be of larger
+magnitude in such a case (analogous to a scaling up of 𝜃 in section 5).
+7.2.2
+
+Results in a different population?
+
+This study was conducted on rental property owners in Kampala Uganda. Results may differ
+if implemented for a different geographical location, or tax base. As highlighted in Antinyan
+and Asatryan (2024), our treatment effects are generally lower than other studies looking at the
+effectiveness of ‘nudge’ policies on tax compliance, and a large part of the reason for this may
+be the low-income context in which our study was carried out, where levels of compliance and
+government legitimacy may be lower.
+28
+
+Our speculation is that a defining feature of our population is the low baseline level of
+compliance. As discussed in Besley et al. (2022), social motivations to pay tax may be
+endogenous to the level of compliance. Therefore, the shame mechanism in our framework
+may be stronger in contexts where baseline compliance rates are high. In such contexts of high
+compliance, we expect (direct) reporting and recognition effects to both be more positive. We
+did explore this within our population using heterogeneity analysis, but we cannot detect any
+differences in treatment effects between bottom, middle, and top terciles of baseline compliance
+rates (see Appendix Table A10 columns 3 and 4). A key issue is that we do not observe any
+local areas with high absolute levels of compliance at baseline, e.g. the 95th percentile village
+compliance rate is only 29%. In addition, we speculate that a context with much higher baseline
+compliance would have less room for initially optimistic taxpayers to be demotivated by reports
+of delinquents, and so the indirect effects would likely be more positive than they are in our
+context. However, this would obviously also depend on the prior beliefs of the taxpayers.
+Another important feature of our population is that the city government is generally seen
+unfavourably. There are multiple reasons, but three common themes from focus groups and
+follow-up interviews are that there is under-provision of public services, issues with the property
+valuation process, and poor sensitization of property tax procedures. For instance, follow-up
+respondent #21509 explains: “KCCA is like a bottomless pit ... paying taxes taxes taxes but
+what is there to show? ... most of the communities do things for themselves”. Our speculation is
+that this diminishes the social motivation to pay by providing delinquents an excuse that taxes
+are not put to a socially productive use. Respondent #21509 explains: “To be proud of your tax
+payment means getting back benefits from the people you paid taxes to. ... but here you pay and
+you are not getting anything”. So if our treatments were assigned in a population with higher
+perceived productive state capacity, we would expect our direct effects to be more positive.
+In addition, a distinctive feature of property taxes is that the tax base is highly observable.
+The government knows what is owed by each property and can easily identify delinquents and
+compliers. This is different from other tax bases, like personal income, where liability is more
+difficult to observe. Effectively this means that in other contexts, reporting and recognition
+effects can operate through an additional ‘whistle blower’ channel. Upon publicly disclosing tax
+payments, a third party can inform the government that a particular individual’s reported income
+is less than their true income. Our speculation is that our direct treatment effects on a tax base
+that is less observable would be more positive due to the additional whistle blower channel. This
+is one important dimension that our context differs from Slemrod et al. (2022) who study public
+disclosure of self-employed income taxpayers in Pakistan.
+Finally, and related to the previous point, owner occupied properties are exempted in our
+context. If instead the tax was levied also on owner occupiers, then the privacy channel may be
+muted because it is more likely that ownership is already publicly known. Our speculation is
+that this would attenuate treatment effects towards zero.
+
+29
+
+7.2.3
+
+Results in the same population in different circumstances?
+
+In this paper we study public disclosure of property taxpayers over the course of one year
+without repetition. If the program was implemented repeatedly over time, or under different
+circumstances, our results may differ.
+We speculate that treatment effects would attenuate towards zero over time if they were
+implemented on a repeated basis. First, consider a tax delinquent who gets reported in the first
+year. Once reported, the government has less leverage over them as it becomes increasingly
+likely over time that the privacy costs have already been incurred. Equivalently, the effect of
+recognition will become less negative. So, direct effects should attenuate over time. Second,
+consider a taxpayer who receives a delinquent or complier list and updates their beliefs about
+the compliance of others downwards. Over time, these beliefs will converge, i.e. taxpayers will
+be sufficiently pessimistic about compliance that they will no longer update. Again, this would
+mean that indirect effects tend towards zero overtime. Finally, a similar argument can be made
+about the benchmark enforcement message. This treatment may remind taxpayers of the legal
+enforcement actions that the government can take, but its effectiveness is likely to decline unless
+actual enforcement is increased and perceived by taxpayers.
+Finally, our experimental interventions were conducted in 2021, the year following the
+COVID pandemic. Importantly, the city government put out a waiver on late payment penalties
+during the year 2020. This may have temporarily lowered taxpayers’ social motivation to pay
+because it became more acceptable to be delinquent. As discussed in section 7.2.2 we believe
+that there are more fundamental reasons for limited social motivation to pay, and that the relative
+effect of the pandemic on social motivations was limited. However, it is possible that if our
+intervention was implemented in a later year then our reporting and recognition treatment effects
+would be more positive due to this temporary decrease in social motivations passing over time.
+
+7.3
+
+Policy Implications
+
+Our study has important implications for policy makers in looking to raise property tax compliance
+in low-income settings like Kampala. There are three main takeaways for policymakers.
+First, public disclosure policies in such a context seem to have, at best, limited effects on
+compliance, and at worst may even reduce tax compliance. The small positive direct effect of
+publicly reporting delinquents was counterbalanced by a negative indirect effect of disseminating
+information about these delinquents. Assuming that the average policy effect can be calculated
+as the sum of direct and indirect average effects, this gives a very small and negative (-0.075
+percentage point) total effect on tax compliance. Even worse, recognition of compliant taxpayers
+completely backfires, with both direct and indirect effects of recognition reducing tax compliance.
+The average policy effect of recognition is a relatively large negative effect on compliance (-1.33
+percentage points). We recommend against public disclosure policies in similar contexts.
+Second, standard reminders about the legal enforcement ability of the government can raise
+30
+
+compliance by about 1.3 percentage points. This is over twice the size of the estimated direct
+effect of reporting, i.e. even before accounting for the negative indirect effects. These simple
+enforcement messages represent a relatively more effective, though still somewhat weak, policy
+tool than public disclosure. Taking our 0.019 estimate of the enforcement message effect on the
+share of liability paid, and noting that the average liability is 290k UGX, enforcement messages
+raise about 5,510 UGX per property compared to simple reminders at no additional cost.32 We
+emphasize however, that despite the relative cost effectiveness of enforcement messages, their
+absolute magnitude is still very small compared to the overall compliance gap. Such ‘nudges’
+are very unlikely to make a substantial difference to compliance rates in low capacity settings.
+Finally, our study suggests that SMS can be an effective tool for policy communication.
+Taxpayers are reachable by phone: we called 8,525 taxpayers for our endline survey and of the
+6,303 taxpayers that we were able to reach by phone, 87% had correct phone numbers according
+to the KCCA database. The majority (88%) of our endline survey respondents recall receiving a
+message from KCCA regarding property rate compliance at some point in the study year. At the
+same time, even simple reminder messages appear to have a significant impact on payments.
+While we did not create a randomly assigned group of property owners to receive no reminders,
+we can look at payments over time in the style of an event study before and after our intervention
+starts. Appendix Figure A8 shows striking increases in control group payment propensities right
+at the first intervention week that remain elevated throughout the treatment period.
+
+8
+
+Conclusion
+
+Our study investigates the impact of public disclosure policies on property tax compliance in a
+low-income, low-compliance setting through a field experiment with the Kampala Capital City
+Authority.
+We find evidence of positive direct effects of reporting, whereby those warned are more
+likely to pay their taxes, but negative indirect effects on those who are informed. On public
+recognition, however, we find both negative direct effects and indirect effects. We investigate
+these effects further to better understand the underlying mechanisms. We find that the positive
+direct effects of public reporting are similar in magnitude but of opposite sign to the direct effects
+of public recognition. Using a parsimonious model, we show that this can be explained by a
+privacy cost to being revealed as a property owner, and no shame cost to tax delinquency nor
+social gain to compliance. Further, we provide evidence that public disclosure polices induce
+negative indirect effects by updating taxpayers’ beliefs about general compliance downward.
+Why is it that public disclosure has such limited effects on tax compliance in this context?
+We speculate that in a context of low compliance and low service provision, payment of taxes
+does not gain social esteem, resulting in limited shame of delinquency. At the same time,
+32By contrast, other types of information messages (reciprocity or city contact details) have no effect on
+compliance. We explore this further in Ahabwe et al. (2023).
+
+31
+
+public disclosure would be more effective in a context of high compliance, where disseminating
+information raises taxpayers beliefs about compliance.
+The findings of our field experiment shed light on options for future policy. It seems that
+public disclosure policies are not effective at raising compliance in this context; instead, a
+simple message communicating potential enforcement measures is a cost-effective way of raising
+compliance by at least as much as the threat of public reporting.
+With the above in mind, it is important to note that the cost-effectiveness of nudge policies
+comes largely from the fact that they are so cheap, and not because they are particularly effective.
+In the context of property tax collection in sub-Saharan Africa where compliance rates are
+extremely low, more ambitious policies are needed in order to reach high levels of tax compliance.
+This remains an important avenue for future research.
+
+References
+Ahabwe, J., Manwaring, P., Mutebi, J. and Regan, T. (2023), Public disclosure and property tax
+compliance: A field experiment in Kampala, Uganda. IGC policy brief UGA-20088.
+Allingham, M. and Sandmo, A. (1972), ‘Income Tax Evasion: A Theoretical Analysis’, Journal
+of Public Economics 1, 323–338.
+Angaretis, C., Galle, B., Organ, P. and Prohofsky, A. (2022), Non-Monetary Sanctions as Tax
+Enforcement Tools: Evaluating Californias Top 500 Program. working paper.
+Antinyan, A. and Asatryan, Z. (2024), ‘Nudging for tax compliance: A meta-analysis’, The
+Economic Journal 135(668), 1033–1068.
+Balan, P., Bergeron, A., Tourek, G. and Weigel, J. (2022), ‘Local Elites as State Capacity: How
+City Chiefs use Local Information to Increase Tax Compliance in the D.R. Congo’, American
+Economic Review 112(3), 762–797.
+Baland, J.-M., Guirkinger, C. and Mali, C. (2011), ‘Pretending to be poor: Borrowing to escape
+forced solidarity in cameroon’, Economic Development and Cultural Change 60(1), 1–16.
+Banerjee, A., Chassang, S. and Snowberg, E. (2017), Chapter 4 - decision theoretic approaches
+to experiment design and external validityaa, in A. V. Banerjee and E. Duflo, eds, ‘Handbook
+of Field Experiments’, Vol. 1 of Handbook of Economic Field Experiments, North-Holland,
+pp. 141–174.
+Benjamini, Y., Krieger, A. M. and Yekutieli, D. (2006), ‘Adaptive linear step-up procedures that
+control the false discovery rate’, Biometrika 93(3), 491–507.
+Bergeron, A., Tourek, G. and Weigel, J. (2024), ‘The State Capacity Ceiling on Tax Rates:
+Evidence from Randomized Tax Abatements in the DRC’, Econometrica 92(4), 1163–1193.
+32
+
+Besley, T., Jensen, A. and Persson, T. (2022), ‘Norms, Enforcement, and Tax Evasion’, Review
+of Economics and Statistics .
+Besley, T. and Persson, T. (2014), ‘Why Do Developing Countries Tax So Little?’, Journal of
+Economic Perspectives 28(4), 99–120.
+Blaufus, K., Bob, J., Otto, P. E. and Wolf, N. (2017), ‘The effect of tax privacy on tax compliance
+an experimental investigation’, European Accounting Review 26(3), 561–580.
+Bø E., Slemrod, J. and Thoresen, T. (2015), ‘Taxes on the Internet: Deterrence Effects of Public
+Disclosure’, American Economic Journal: Economic Policy 7(1), 36–62.
+Brockmeyer, A., Ramirez, K., Estefan, A. and Serrato, J. C. S. (2023), Taxing Property in
+Developing Countries: Theory and Evidence from Mexico. working paper.
+Bruhn, M. and McKenzie, D. (2009), ‘In pursuit of balance: Randomization in practice in development field experiments’, American Economic Journal: Applied Economics 1(4), 200232.
+Bursztyn, L. and Jensen, R. (2017), ‘Social Image and Economic Behavior in the Field:
+Identifying, Understanding, and Shaping Social Pressure’, Annual Review of Economics
+9, 131–153.
+Carranza, E., Donald, A., Grosset-Touba, F. and Kaur, S. (2025), ‘The social tax: Redistributive
+pressure and labor supply’, Econometrica . forthcoming.
+Castro, L. and Scartascini, C. (2015), ‘Tax compliance and enforcement in the pampas evidence
+from a field experiment’, Journal of Eocnomic Behaviour & Organization 116, 65–82.
+Cohen, I. (2024), ‘Technology and the state: Building capacity to tax via text’, Journal of Public
+Economics 236, 105154.
+Collin, M., Di Maro, V., Evans, D. K. and Manang, F. (2021), Property tax compliance in
+Tanzania: Can nudges help? Brookings Global Working Paper 161.
+De Neve, J.-E., Imbert, C., Lutz, M., Spinnewĳn, J. and Tsankova, T. (2021), ‘How to Improve
+Tax Compliance? Evidence from Population-Wide Experiments in Belgium’, Journal of
+Political Economy 129(5), 1425–1463.
+Del Carpio, L. (2022), Are The Neighbors Cheating? Evidence from a Social Norm Experiment
+on Property Taxes in Peru. Working Paper.
+Drago, F., Mengel, F. and Traxler, C. (2020), ‘Compliance behavior in networks: Evidence from
+a field experiment’, American Economic Journal: Applied Economics 12(2), 96133.
+
+33
+
+Dwenger, N., Kleven, H., Rasul, I. and Rincke, J. (2016), ‘Extrinsic and Intrinsic Motivations
+for Tax Compliance: Evidence from a Field Experiment in Germany’, American Economic
+Journal: Economic Policy 8(3), 203–232.
+Dwenger, N. and Treber, L. (2022), ‘Shaming for tax enforcement’, Management Science
+68(11), 8202–8233.
+Franzen, R. and McCluskey, W. (2017), Property Tax in Africa: Status, Challenges, and
+Prospects, Lincoln Land Institute of Land Policy, Cambridge, Massachusetts.
+Glazer, A. and Konrad, K. A. (1996), ‘A signaling explanation for charity’, The American
+Economic Review 86(4), 1019–1028.
+Gordon, J. (1987), ‘Individual Morality and Reputation Costs as Deterrents to Tax Evasion’,
+European Economic Review 33, 979–805.
+Hasegawa, M., Hoopes, J., Ishida, R. and Slemrod, J. (2013), ‘The effect of public disclosure on
+reported taxable income: Evidence from individuals and corporations in japan’, National Tax
+Journal 66(3), 571–608.
+Jakiela, P. and Ozier, O. (2015), ‘Does Africa Need a Rotten Kin Theorem? Experimental
+Evidence from Village Economies’, The Review of Economic Studies 83(1), 231–268.
+Jensen, A., Brockmeyer, A. and Gadenne, L. (2024), ‘Taxation and development’, VoxDevLit
+12(1).
+Knebelmann, J., Pouliquen, V. and Sarr, B. (2024), Discretion versus Algorithms: Bureaucrats
+and Tax Equity in Senegal .
+Luttmer, E. and Singhal, M. (2014), ‘Tax Morale’, Journal of Economic Perspectives
+28(4), 149–168.
+Macchi, E. (2023), ‘Worth your weight: Experimental evidence on the benefits of obesity in
+low-income countries’, American Economic Review 113(9), 22872322.
+Mascagni, G. and Nell, C. (2022), ‘Tax Compliance in Rwanda: Evidence from a Message Field
+Experiment’, Economic Development and Cultural Change 70(2).
+Nakayama, K. (2021), Public Disclosure of Taxpayer Information as a Measure to Improve Tax
+Compliance, International Monetary Fund, USA.
+Nathan, B. C., Perez-Truglia, R. and Zentner, A. (2024), Paying your fair share: Perceived
+fairness and tax compliance. NBER working paper 32588.
+
+34
+
+OECD (2017), Tax administration 2017: Comparative information on oecd and other advanced
+and emerging economies, Technical report, Organization for Economic Co-operation and
+Development, Paris, France.
+Okunogbe, O. (2019), Becoming legible to the state: Evidence from property taxes in liberia.
+Working Paper.
+Okunogbe, O. and Tourek, G. (2024), ‘How can lower-income countries collect more taxes? the
+role of technology, tax agents, and politics’, Journal of Economic Perspectives 38(1), 81–106.
+URL: https://www.aeaweb.org/articles?id=10.1257/jep.38.1.81
+Olken, B., Khwaja, A., Khan, A. and Shaukat, M. (2022), Rebuilding the Social Compact:
+Urban Service Delivery and Property Taxes in Pakistan. Final Report for International Growth
+Center.
+Perez-Truglia, R. and Troiano, U. (2018), ‘Shaming tax delinquents’, Journal of Public Economics
+167, 120–137.
+Riley, E. (2024), ‘Resisting social pressure in the household using mobile money: Experimental evidence on microenterprise investment in uganda’, American Economic Review
+114(5), 141547.
+Slemrod, J. (2019), ‘Tax Compliance and Enforcement’, Journal of Economic Literature
+57(4), 1–19.
+Slemrod, J. (2025), ‘Tax Privacy’, Journal of Economic Perspectives 39(1).
+Slemrod, J., Rehman, O. and Waseem, M. (2022), ‘How Do Taxpayers Respond to Public
+Disclosure and Social Recognition Programs? Evidence from Pakistan’, Review of Economics
+and Statistics 104(1), 116–132.
+Squires, M. (2024), ‘Kinship taxation as an impediment to growth: Experimental evidence from
+Kenyan microenterprises’, The Economic Journal 134(662), 2558–2579.
+The Conversation (2018), Cape Towns map of water usage has residents seeing red. [Online;
+accessed 01-June-2022].
+Wenzel, M. (2005), ‘Misperceptions of social norms about tax compliance: From theory to
+intervention’, Journal of Economic Psychology 26(6), 862–883.
+Özler, B., Fernald, L. C., Kariger, P., McConnell, C., Neuman, M. and Fraga, E. (2018),
+‘Combining pre-school teacher training with parenting education: A cluster-randomized
+controlled trial’, Journal of Development Economics 133, 448–467.
+
+35
+
+Figures
+Figure 1: Baseline Norms and Beliefs
+(a) Perceived norms on compliance and delinquency
+
+(b) Beliefs about the compliance rate
+
+Notes: This figure plots responses from the baseline survey of property owners. Panel a plots the share of respondents
+with different stated norms of social gains from tax compliance (blue bars) and social costs to tax delinquency (red
+bars) - not specific to property tax - from 1,154 respondents who gave an answer to both questions. Panel b plots
+histograms for beliefs of the compliance rate across all properties city-wide (blue bars) and across all wealthy (top
+5% by value) property owners (red bars) from 1,088 respondents that gave an answer to both questions. The dashed
+blue line gives the true compliance rate in the city, the dashed red line gives the true compliance rate for the wealthy
+property owners.
+
+36
+
+Figure 2: Follow-up survey: perceived costs and benefits of public disclosure
+(a) What gains would be incurred if compliance is made public?
+
+(b) What costs would be incurred if delinquency is made public?
+
+(c) What costs would be incurred if ownership is made public?
+
+Notes: This Figure plots responses from our follow-up survey. Questions were asked as open-ended and subsequently
+categorized. Responses are not mutually exclusive. Respondents were asked about all possible gains to compliance
+being made public (panel a), costs to delinquency being made public (panel b), and costs to ownership being made
+public (panel c). Critically, answers to panel a) and b) were asked conditioning on public knowledge of property
+37
+ownership.
+
+Figure 3: Treatment group diagrams
+(a) Treatment groups in first wave (direct effects)
+
+Standard Notification of Dues
+Properties (N): 174,304
+Phone Numbers (C): 69,584
+
+Control:
+Simple
+Reminder
+
+Public
+Disclosure
+Messages
+
+Benchmark
+Nudge
+Messages
+
+N: 43,558
+C: 17,365
+
+N: 87,247
+C: 34,808
+
+N: 43,499
+C: 17,411
+
+Report
+if unpaid
+
+Recognize
+if paid
+
+N: 43,483
+C: 17,431
+
+N: 43,764
+C: 17,377
+
+Enforce
+
+Recip.
+
+Relatn.
+
+N: 14,573
+C: 5,811
+
+N: 14,436
+C: 5,814
+
+N: 14,490
+C: 5,786
+
+via SMS
+
+via Online
+
+via SMS
+
+via Online
+
+N: 21,816
+C: 8,719
+
+N: 21,667
+C: 8,712
+
+N: 22,075
+C: 8,680
+
+N: 21,689
+C: 8,697
+
+(b) Treatment groups in second wave (indirect effects)
+
+Standard Notification of Dues
+Properties (N): 176,762
+Phone Numbers (C): 69,853
+
+Control:
+Simple
+Reminder
+
+Public
+Dissemination
+Messages
+
+N: 58,107
+C: 23,130
+
+N: 118655
+C: 46,723
+
+Delinquents
+List
+
+Compliers
+List
+
+Wealthy
+Compliers
+
+N: 58,942
+C: 23,263
+
+N: 44,660
+C: 17,611
+
+N: 15,053
+C: 5,849
+
+via SMS-city
+
+via SMS-neigh
+
+via Online
+
+via SMS-city
+
+via SMS-neigh
+
+via Online
+
+N: 19,925
+C: 7,800
+
+N: 19,529
+C: 7,760
+
+N: 19,488
+C: 7,703
+
+N: 14,423
+C: 5,834
+
+N: 14,766
+C: 5,815
+
+N: 15,471
+C: 5,962
+
+Notes: This figure depicts the assignment of properties and property owners to the control and treatment groups
+from the first wave (panel a) and second wave (panel b). The number of properties in each group is denoted N and
+the number of phone number clusters, the level of randomization, is denoted C.
+
+38
+
+Tables
+Table 1: Direct and Indirect treatment effects on compliance outcomes
+(1)
+
+(2)
+
+Paid
+Liability
+(pp)
+Panel A: Direct effects from wave one
+
+Any
+Payment
+(pp)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+
+Public disclosure effects
+Reporting (𝜏𝑆 )
+
+0.579∗∗∗
+(0.218)
+
+0.816∗∗∗
+(0.251)
+
+1.003∗∗∗
+(0.200)
+
+Recognition (𝜏𝐻 )
+
+-0.551∗∗∗
+(0.193)
+
+-0.786∗∗∗
+(0.213)
+
+-1.056∗∗∗
+(0.200)
+
+Enforcement
+
+1.290∗∗∗
+(0.316)
+
+1.509∗∗∗
+(0.353)
+
+1.911∗∗∗
+(0.282)
+
+Reciprocity
+
+-0.0674
+(0.311)
+
+-0.0455
+(0.343)
+
+-0.159
+(0.283)
+
+Relationship
+
+-0.503∗
+(0.274)
+0.94
+[-0.67,0.73]
+3.4
+
+-0.520
+(0.317)
+0.94
+[-0.75,0.81]
+4.2
+
+-0.595∗∗
+(0.283)
+0.88
+[-0.73,0.62]
+5.4
+
+Panel B: Indirect effects from wave two
+Delinquent List (𝜅 𝑆 )
+-0.654∗∗∗
+(0.176)
+
+-0.880∗∗∗
+(0.220)
+
+-1.314∗∗∗
+(0.330)
+
+-0.782∗∗∗
+(0.185)
+0.44
+[-0.19,0.45]
+3.1
+
+-0.810∗∗∗
+(0.257)
+0.77
+[-0.54,0.40]
+4.6
+
+-1.309∗∗∗
+(0.355)
+0.99
+[-0.61,0.60]
+5.9
+
+Benchmark effects
+
+p-value (𝜏𝑆 + 𝜏𝐻 = 0)
+CI95% (𝜏𝑆 + 𝜏𝐻 = 0)
+Control Mean
+
+Complier List (𝜅 𝐻 )
+p-value (𝜅 𝑆 − 𝜅 𝐻 = 0)
+CI95% (𝜅 𝑆 − 𝜅 𝐻 = 0)
+Control Mean
+
+Note: Panel A shows estimates of direct effects on compliance at wave one (may-june 2021), and
+Panel B shows estimates of indirect effects on compliance at wave two (nov-dec 2021). The sample for panel A is
+174304 properties and 69584 property owner clusters from the wave one endline. The sample for panel B is 161709
+properties and 64004 property owner clusters from wave two (we exclude 15053 properties in the wealthy compliers
+treatment to keep the treatment groups compositionally similar). All outcomes are scaled to be interpretted as
+percentage points, and full definitions are given in Appendix Tables A4 and A6. Each observation is a property and
+each model controls for randomisation strata fixed effects. Standard errors in parentheses are clustered at the mobile
+phone number level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+39
+
+Table 2: Indirect effects on compliance and beliefs in endline survey sample
+Panel A: Effects on compliance beliefs and IV
+OLS
+(1)
+
+Delinquent List
+
+-1.69∗∗
+(0.66)
+
+(2)
+All
+Kampala
+Comply
+(pp)
+-2.29∗∗
+(1.16)
+
+Complier List
+
+-1.79∗∗
+(0.74)
+
+-1.58
+(1.26)
+
+Paid
+Liability
+(pp)
+
+2SLS
+(3)
+Rich
+Kampala
+Comply
+(pp)
+-4.59∗∗∗
+(1.54)
+
+(4)
+Own
+Village
+Comply
+(pp)
+-0.57
+(1.22)
+
+-3.52∗∗
+(1.56)
+
+1.25
+(1.33)
+
+Belief Rich
+F stat (K&P)
+Control Mean
+
+4.4
+
+52.6
+
+62.2
+
+34.0
+
+Panel B: Effects on alternative beliefs with multiple hypothesis corrections
+(1)
+(2)
+(3)
+(4)
+
+(5)
+Paid
+Liability
+(pp)
+
+0.42∗∗
+(0.20)
+9.81
+4.4
+
+All
+Kampala
+Comply
+(pp)
+
+Rich
+Kampala
+Comply
+(pp)
+
+Own
+Village
+Comply
+(pp)
+
+KCCA
+Detection
+Capacity
+(pp)
+
+Delinquent List
+
+-2.29
+(1.16)
+[0.05]
+{0.15}
+
+-4.59
+(1.54)
+[0.00]
+{0.03}
+
+-0.57
+(1.22)
+[0.64]
+{1.00}
+
+-1.73
+(1.65)
+[0.30]
+{0.67}
+
+(5)
+KCCA
+Acts in
+Best
+Interest
+(pp)
+-0.31
+(2.43)
+[0.90]
+{1.00}
+
+Complier List
+
+-1.58
+(1.26)
+[0.21]
+{0.57}
+52.6
+
+-3.52
+(1.56)
+[0.02]
+{0.12}
+62.2
+
+1.25
+(1.33)
+[0.35]
+{0.67}
+34.0
+
+-0.13
+(1.94)
+[0.95]
+{1.00}
+87.0
+
+2.14
+(2.55)
+[0.40]
+{0.67}
+45.5
+
+Control Mean
+
+Note: The sample for all specifications is 7230 properties and 3458 property owner clusters from the
+endline survey. All outcomes are scaled to be interpretted as percentage points, and full definitions are given in
+Appendix Tables A4 and A6. Each observation is a property and each model controls for randomisation strata fixed
+effects. Standard errors in parentheses are clustered at the mobile phone number level. Panel A columns 1-4 are
+OLS estimates of treatment effects, and column 5 is IV/2SLS results for the effect of beliefs about compliance of
+the rich, instrumented with a dummy equal to 1 if either a delinquents or compliers list was randomly assigned.
+The Kleibergen-Paap F-statistic is reported at the bottom of the panel. Panel B columns are OLS estimates of
+treatment effects on a set of alternative belief outcomes. In addition, standard p-values for the null hypothesis that
+the treatment effect is zero are given in square brackets, and sharpened q-values adjusting for the False Discovery
+Rate are given in curly brackets. Note that significance stars are only applied in panel A: ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05,
+∗∗∗ 𝑝 < 0.01.
+
+40
+
+Online Appendices
+Priya Manwaring & Tanner Regan
+May 5, 2026
+
+A
+
+Appendix Figures
+Figure A1: KCCA Own-Source Revenues by Collection Instrument
+(a) Collected Revenues in 2021
+
+(b) Revenue Share by Instrument 2017-2021
+
+Notes: This figure plots distributions of own-source revenue collection by the Kampala Capital City authority. Panel
+(a) plots collected revenue in the financial year 2021/22 by collection instrument. Panel (b) plots revenue share
+from a select set of instruments over the period 2017/18-2021/22.
+
+1
+
+Figure A2: Property Tax Compliance Rates Across Countries
+
+Notes: This figure plots property tax compliance rates from cities around the world. Estimates are taken from
+studies of property taxes in low- and middle- income countries where available. The cities or regions include:
+Carrefour, Haiti (Krause, 2020); Cong Town, Liberia (Okunogbe, 2019); Kananga, DRC (Bergeron et al., 2019);
+Kampala, Uganda (this paper); Dakar, Senegal (Cogneau et al., 2020); Dar es Salaam, Tanzania (Collin et al., 2021);
+Quelimane, Mozambique [self reported compliance] (Sandholtz and Vicente, 2024); MMDAs in Ghana (Dzansi
+et al., 2020); Mexico City, Mexico (Brockmeyer et al., 2023); Santa Fe, Argentina (Castro and Scartascini, 2015);
+Manaus, Brazil (Best et al., 2019); and Lima, Peru (Del Carpio, 2022).
+
+Figure A3: Actual and Potential Revenue Collection vs. Property Value
+
+Notes: This Figure plots actual and potential revenue collection by ventiles of property value. Revenue is calculated
+over three financial years: 2019/20, 2020/2021, and 2021/22. Actual revenue includes all payments: liabilities,
+interest, and penalties. Potential revenue is calculated as three years of annual liability.
+
+2
+
+Figure A4: Follow-up survey: (additional) perceived costs and benefits of public disclosure
+(a) What costs would be incurred if compliance is made public?
+
+(b) What gains would be incurred if delinquency is made public?
+
+(c) What gains would be incurred if ownership is made public?
+
+Notes: This Figure plots responses from our follow-up survey. Questions were asked as open-ended and subsequently
+categorized. Responses are not mutually exclusive. Respondents were asked about all possible costs to compliance
+being made public (panel a), gains to delinquency being made public (panel b), and gains to ownership being made
+public (panel c). Critically, answers to panel a) and b) were asked conditional on public knowledge of property
+3
+ownership.
+
+Figure A5: Follow up survey: from whom is property ownership kept private?
+
+Notes: This Figure plots survey responses to the question “To whom would publishing [a list of property owners]
+reveal that [hypothetical person] is a property owner?", from our follow-up survey. This was asked to all respondents
+who answered “yes" to “Do you think publishing these lists would reveal to any of [hypothetical person]’s friends,
+family or wider social network that they are a property owner (i.e. they would find this out for the first time)?"
+
+Figure A6: Taxable Properties (density) and village and parish boundaries in Kampala
+
+Parishes
+Villages
+
+Notes: This Figure plots the density of taxable properties and village and parish boundaries in Kampala. Darker
+areas represent higher taxable property density.
+
+4
+
+Figure A7: Screenshots of the online KCCA ‘honoring’ and ‘reporting’ webpages’
+
+Notes: This Figure shows screenshots from the official KCCA webpage. The top image is the page that is sent to the
+Online Recognition treatmentment group in public dissemination (indirect effcts in wave 2), and the bottom image
+is the page sent to the Online Reporting treatment group in public dissemination (indirect effcts in wave 2).
+
+5
+
+Figure A8: Event studies SMS reminder effects and placebos
+(a) June payment deadline (wave one)
+
+(b) December payment deadline (wave two)
+
+Notes: This figure plots the share of properties paying their liability by week leading up to payment deadlines. Only
+properties that were in the control group for both wave one and two are included. Panel A focuses on the June
+deadline, and panel B the December deadline. The vertical red line represents the date at which the intervention
+started sending reminder messages. The black dots represent years in which the intervention took place, and grey
+dots are ‘placebo’ years where the intervention did not take place.
+
+6
+
+B
+
+Appendix Tables
+Table A1: Timeline of Study
+
+Date
+
+Activity
+
+Messages
+sent (per
+language)
+
+Baseline Survey, 2020
+Nov-Dec
+In-person baseline Survey conducted by a private surveying company with 1,172
+property owners
+Events During First Wave of Experiment, 2021
+14 May
+Colleagues at KCCA generated list of all properties and balances as of this date
+17 May
+Standard messages sent - one for each property that had an outstanding liability
+18 May
+Control, treatment, and benchmark messages sent - one for each phone number
+against which there was an outstanding liability (i.e. among any of the properties
+listed as owned by someone with this phone number)
+21 May
+Colleagues at KCCA generated list of all properties and balances as of this date
+24 May
+Control, treatment, and benchmark messages sent - one for each phone number
+against which there was an outstanding liability (i.e. among any of the properties
+listed as owned by someone with this phone number)
+11 June
+Colleagues at KCCA generated list of all properties and balances as of this date
+14 June
+Standard messages sent - one for each property that had an outstanding liability
+15 June
+Control, treatment, and benchmark messages sent - one for each phone number
+against which there was an outstanding liability (i.e. among any of the properties
+listed as owned by someone with this phone number)
+Events During Second Wave of Experiment, 2021
+17 Nov
+Colleagues at KCCA generated list of all properties and balances as of this date
+18-19 Nov
+Standard messages sent - one for each property that had an outstanding liability
+19-22 Nov
+Control and treatment messages sent - one for each phone number against which
+there was an outstanding liability (i.e. among any of the properties listed as
+owned by someone with this phone number)
+2 Dec
+Colleagues at KCCA generated list of all properties and balances as of this date
+3 Dec
+Control and treatment messages sent - one for each phone number against which
+there was an outstanding liability (i.e. among any of the properties listed as
+owned by someone with this phone number)
+13 Dec
+Colleagues at KCCA generated list of all properties and balances as of this date
+14 Dec
+Standard messages sent - one for each property that had an outstanding liability
+15 Dec
+Control and treatment messages sent - one for each phone number against which
+there was an outstanding liability (i.e. among any of the properties listed as
+owned by someone with this phone number)
+Endline Survey, 2022
+Jan -Feb
+Endline Survey conducted by a private surveying company over the phone with
+4,960 property owners.
+Follow-up Survey, 2024
+April
+Follow-up Survey conducted by PI in person with 56 property owners.
+
+7
+
+N/A
+
+N/A
+174,617
+70,381
+
+N/A
+69,238
+
+N/A
+170,942
+76,902
+
+N/A
+176,126
+69,186
+
+N/A
+69,054
+
+N/A
+173,566
+68,520
+
+N/A
+
+N/A
+
+Table A2: Content of ‘Direct Effects’ messages sent in wave one
+Message
+
+English Text
+
+Standard
+
+Please pay UGX [liability] as overdue property rates
+balance for [propertyno] in the next 6 weeks. For
+details visit [Division] Division or call [KCCA phone
+contact]. Thank you KCCA
+
+Control
+
+Benchmark
+Enforcement
+
+Benchmark
+Reciprocity
+
+Benchmark
+Relationship
+
+Reporting SMS
+
+Reporting Web
+
+Recognition SMS
+
+Recognition Web
+
+Recognition SMS
+(alternate)
+
+Dear [customername], Please remember to pay your
+overdue property rates in the next [6/4/2] weeks.
+Thank you KCCA
+Dear [customername], If you do not pay your property rates, KCCA will implement enforcement measures (including fines and legal action) to recover this
+amount. Thank you KCCA
+Dear [customername], Paying property rates makes
+it possible for KCCA to fund roads, drainage, street
+lighting and other essential services. Pay your taxes
+for a better city. Thank you KCCA
+Dear [customername], KCCA assigns a client relationship manager (CRM) for every taxpayer to address
+any query. Please contact your CRM with any issues:
+[arm_name] [arm_contact]. Thank you KCCA
+Dear [customername], If you do not pay your property
+rates within [6/4/2] weeks KCCA will REPORT you
+as a DEFAULTER and share your name and parish in
+an SMS to fellow citizens and neighbours. Thank you
+KCCA
+Dear [customername], If you do not pay your property
+rates within [6/4/2] weeks KCCA will REPORT you
+as a DEFAULTER and share your name and parish on
+kcca.go.ug/reporting-citizens. Thank you KCCA
+Dear [customername], If you pay your property rates
+within [6/4/2] weeks KCCA will RECOGNISE your
+CONTRIBUTION by sharing your name and parish
+in an SMS to fellow citizens and neighbours. Thank
+you KCCA
+Dear [customername], If you pay your property rates
+within [6/4/2] weeks KCCA will RECOGNISE your
+CONTRIBUTION by posting your name and parish
+publicly on kcca.go.ug/honouring-citizens. Thank
+you KCCA
+Dear [customername], Thank you for paying your
+property rates. KCCA will RECOGNISE your CONTRIBUTION by sharing your name and parish in an
+SMS to fellow citizens and neighbours. Thank you
+KCCA
+
+8
+
+Luganda Text
+Nyabo/Sebo, osabibwa okusasula [liability] sente
+zobusulu bwamayumba ezirudde enyo okusasulwa nga
+za [propertyno] mu sande 6 ezĳja. Ebisingawo genda
+ku [Division] oba kuba essimu [KCCA phone contact].
+Webale nyo. KCCA
+[customername], jjukira okusasula sente zobusuulu
+bwamayumba ezirudde enyo mu sande [6/4/2] ezĳja.
+Webale nyo. KCCA
+[customername], bwotosasule sente zobusuulu
+bwenyumba yo, KCCA ejja kwongeramu amaanyi
+ngekozesa (omutango nembuga zamateeka) okkusobozesa okuzisasula. Webale nyo. KCCA
+[customername], okusasula obusuulu bwamayumba
+kisobozesa KCCA okukola enguudo, emyaala, amataala gokunguudo nobuwereza obwenkizo obulala.
+Sasula emisolo gyo kulwekibuga ekisingako. Webale
+nyo. KCCA
+[customername], KCCA yatongoza Maneja akola ku
+buli kwemulugunya kwomusasuzi womusolo. Okubirizibwa okumwebuzaako singa oba nensonga yonna:
+[arm_name] [arm_contact]. Webale nyo. KCCA
+[customername], bwotasasule sente zabusuulu
+bwanyumbayo mu sande [6/4/2], KCCA ejjakkutwala
+nga alemeddwa okusasula era ejjakusasaanya erinya
+lyo nomuluka gwo eri batuuze banno nebaliranwa bo.
+Webale nyo. KCCA
+[customername], bwotasasule sente zobusuulu
+bwenyumbayo mu sande [6/4/2], KCCA ejjakkutwala nga alemeddwa okusasula era esasaanye erinya
+lyo nomuluka gwo ku mukutu kcca.go.ug/reportingcitizens. Webale nyo. KCCA
+[customername], bwonosasula sente zobusuulu
+bwenyumbayo mu sande [6/4/2], KCCA ejjakwenyumiriza mu busasuzi bwo nga esasaanya erinya lyo nomuluka gwo nga ekozesa obubaka obufunze eri batuuze
+banno nebaliranwa bo. Webale nyo. KCCA
+[customername], bwonosasula sente zobusuulu
+bwenyumbayo mu sande [6/4/2], KCCA ejjakwenyumiriza mu busasuzi bwo ngeteeka erinnya lyo nomuluka
+gwo mu lujjudde ku mukutu kcca.go.ug/honouringcitizens. Webale nyo. KCCA
+[customername], webale nyo okusasula sente zobusuulu bwamayumba. KCCA ejjakwenyumiriza mu
+busasuzi bwo nga esasaanya erinya lyo nomuluka gwo
+nga ekozesa obubaka obufunze eri batuuze banno ne
+baliranwabo. Webale nyo. KCCA
+
+Table A3: Content of ‘Indirect Effects’ messages sent in wave two
+Message
+
+English Text
+
+Standard
+
+Dear [customer name], Please pay UGX [balance] as
+property rates balance for [property no] by Dec 31. For
+details visit [division] Division or call your account
+manager: [arm_contact]. Thank you, KCCA
+
+Control
+
+Dear [customer name], Please remember to pay your
+property rates by Dec 31. Thank you KCCA
+
+Delinquents List
+SMS-city
+
+Delinquents List
+SMS-neighbour
+
+Delinquents List
+online-city
+
+Compliers List
+SMS-city
+
+Compliers List
+SMS-neighbour
+
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly reporting on
+property owners who DID NOT pay their balance last
+year. Here are some of these non-compliers: [100
+characters of five names]. Thank you, KCCA
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly reporting on
+your neighbours who DID NOT pay their balance last
+year. Here are some of these non-compliers: [100
+characters of five names]. Thank you, KCCA
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly reporting on
+your neighbours who DID NOT pay their balance last
+year. Visit this link for a list of these non-compliers:
+kcca.go.ug/reporting-citizens. Thank you, KCCA
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly recognising the
+contribution made by property owners who PAID their
+balance last year. Here are some of these compliers:
+[100 characters of five names]. Thank you, KCCA
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly recognising the
+contribution made by your neighbours who PAID their
+balance last year. Here are some of these compliers:
+[100 characters of five names]. Thank you, KCCA
+
+Compliers List
+SMS-wealthy
+
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly recognising
+property owners who PAID their balance of over UGX
+2m last year. Here are some of these compliers: [100
+characters of five names]. Thank you, KCCA
+
+Compliers List
+online-city
+
+By paying property rates, you contribute to essential
+services for the city. KCCA is publicly recognising
+the contribution made by property owners who PAID
+their balance last year. Visit this link for a list of these
+citizens: kcca.go.ug/honouring-citizens. Thank you,
+KCCA
+
+9
+
+Luganda Text
+[Customer name], Osabibwa okusasula UGX [balance] zekizimbe kyo namba [property no] ezaasigalayo obutasukka 31 Dec. Bwewabaawo ekyebuuzibwa, tuukirira ekitebe kyaffe e [division] Division
+oba kubira staff waffe ku ssimu [arm_contact] Weebale nyo. KCCA.
+[customer name], Jukira okusasula Obusuulu bwennyumba yo obutasukka nga 31 December. Weebale
+nnyo. KCCA.
+Bwosasula obusuulu gwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA egenda
+kwanika bannanyini bizimbe abataasasula sente zonna
+ze babanjibwa. Bano beebamu kubataamalayo: [100
+characters of five names] Webale nyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA eyatuukiriza
+baliranwaabo abataasasula sente ezaasigalayo omwaka
+oguwedde. Bano bebatamalayo: [100 characters of
+five names] Webale nyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA eyatuukiriza
+baliranwaabo ababanjibwa. Tuukirira omukutu guno
+okuli olukalala lwabatamalayo: kcca.go.ug/reportingcitizens. Weebale nyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA eyozaayoza
+mu lwatu bannanyini bizimbe abaasasula sente ze baali
+babanjibwa zonna. Bano bebamalayo: [100 characters
+of five names]. Weebale nnyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA eyozaayoza
+mu lwatu baliranwaabo abaasasula sente ezasigalayo
+omwaka oguwedde. Bano bebaamalayo: [100 characters of five names]. Weebale nnyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga. KCCA eyozaayoza
+mu lwatu bannanyini bizimbe abaasasula UGX 2m,
+oba okusingawo, omwaka oguwedde. Bano bebaamalayo: [100 characters of five names]. Weebale
+nnyo. KCCA
+Bwosasula obusuulu bwamayumba, oba okoze nnyo
+ku byetaago ebikulu ebyekibuga.
+KCCA eyozaayoza mu lwatu nga esiima bannanyini bizimbe abaasasula sente ezaali zibabanjibwa omwaka
+oguwedde. Tuukirira omukutu guno okuli abatuuze: kcca.go.ug/honouring-citizens. Weebale nnyo.
+KCCA
+
+Table A4: KCCA administrative data variables
+Outcome
+variable
+Paid Liability
+
+Any Payment
+
+Share Liability
+Paid
+
+Paid 2020
+Liability - Property
+Total Value Owner
+Baseline
+Compliance Rate Parish
+Baseline
+Compliance Rate Village
+Number of
+Property Owners Parish
+Number of
+Property Owners Village
+Property Type
+Legal Entity
+km to CBD
+Owner Liability
+Population
+Population Density
+
+Description
+Indicator if total payments made in the treatment period at least
+covered the annual liability of the property. The indicator is
+multiplied by 100, so units are interpreted as percentage points.
+Indicator if any payment was made towards the property in the
+treatment period. The indicator is multiplied by 100, so units are
+interpreted as percentage points.
+The total payment amount made towards the property in the
+treatment period, divided by the property’s annual liability. The
+indicator is multiplied by 100, so units are interpreted as
+percentage points.
+Indicator variable which = 1 if total payments in the baseline year
+(2019/2020) covered at leas the annual liability of the property.
+The annual tax amount owed for the property, calculated as 6% of
+the rateable value.
+The total value of all properties owned by the owner
+The mean of ‘Paid 2020’ across properties in the parish.
+
+The mean of ‘Paid 2020’ across properties in the village.
+
+The number of unique property owners who own property in the
+parish where the property is located.
+The number of unique property owners who own property in the
+village where the property is located.
+The type, or use, of the property. Coded as either Residential,
+Commercial, or Other.
+Indicator if the owner is a legal entity rather than a private
+individual.
+Distance in kilometers of the property to Kampala City Hall.
+The annual tax amount owed for all properties of the owner.
+Population in property’s village
+Population density in property’s village
+
+10
+
+Table A5: Baseline and Endline Survey Attriters Characteristics
+(1)
+Respondent
+Completed
+Baseline
+(pp)
+3.31
+(3.75)
+
+(2)
+Respondent
+Completed
+Endline
+(pp)
+8.20∗∗∗
+(2.53)
+
+Liability (mn UGX)
+
+-1.28
+(0.91)
+
+-1.05
+(0.64)
+
+Type=Cmrcl.
+
+-0.099
+(3.51)
+
+1.15
+(1.88)
+
+Type=Other
+
+5.19
+(5.84)
+
+4.98
+(3.39)
+
+km to CBD
+
+-0.041
+(0.83)
+
+-0.38
+(0.45)
+
+Owner Liability (mn UGX)
+
+0.052∗∗∗
+(0.013)
+
+0.0056
+(0.023)
+
+Legal Entity
+
+-11.8
+(9.85)
+
+0.58
+(7.79)
+
+Pop. Dense. (th./sqkm)
+
+-0.019∗∗
+(0.0080)
+
+-0.0079
+(0.0074)
+
+Village Pop. (th.)
+
+-0.016
+(0.29)
+
+0.20
+(0.17)
+
+Shr. Vlg. Paid 2020
+
+-20.4
+(26.9)
+
+-18.6
+(16.3)
+
+Shr. Par. Paid 2020
+
+-13.2
+(32.7)
+
+-29.2
+(20.6)
+
+Constant
+
+61.4∗∗∗
+(6.10)
+57.7
+4310
+2025
+
+65.6∗∗∗
+(3.61)
+60.2
+17140
+8067
+
+Paid 2020
+
+Mean Outcome
+N
+N clusters
+
+Note: This table presents coefficients from regressions of attrition (in baseline and endline surveys) on preintervention characteristics. The samples are all properties of owners who were contacted to be a part of the baseline
+survey (column 1) and endline survey (column 2). Note that the N clusters refers to the unique number of mobile
+IDs. The number of unique respondents at baseline is 2042 and at endline 8381, this is 31 fewer and 144 fewer
+respecatively than respondents approached since some characteristics in this table are missing (i.e. those that require
+a GPS coordinate). The number of unique respondents at of endline is yy. The outcomes are an indicator if the
+baseline survey was completed (column 1) and an indicator if the endline survey was completed (column 2). Each
+observation is a property. Standard errors in parentheses are clustered at the mobile phone number level. ∗ 𝑝 < 0.1,
+∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+11
+
+Table A6: Endline survey data variables
+Outcome
+variable
+Kampala Comply
+
+Rich Comply
+
+Village Comply
+
+Detection Capacity
+
+KCCA Acts Best
+
+Better Kept Private
+
+Tax Behav.
+Publish. in Future
+
+Unpaid Wrong and
+Punish.
+
+Want others to
+know complied
+
+Picked-up
+Picked-up &
+Correct
+
+Description
+Respondent’s answer to “Out of every 10 property owners in
+Kampala that are supposed to pay property rates, how many do you
+think actually pay?". This is multiplied by 10, so units are
+interpreted as percentage points.
+Respondent’s answer to “Out of every 10 property owners with the
+most expensive (top 5%) property in Kampala that are supposed to
+pay property rates, how many do you think actually pay?". This is
+multiplied by 10, so units are interpreted as percentage points.
+Respondent’s answer to “Out of every 10 property owners in your
+village that are supposed to pay property rates, how many do you
+think actually pay?". This is multiplied by 10, so units are
+interpreted as percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “Do you think KCCA has the ability to detect who does and does
+not pay taxes?”. The indicator is multiplied by 100, so units are
+interpreted as percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “Do you think that KCCA generally acts in the best interests of
+citizens?”. The indicator is multiplied by 100, so units are
+interpreted as percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “Do you think that information on whether individuals pay taxes
+or not should be kept private?”. The indicator is multiplied by 100,
+so units are interpreted as percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “Do you think people’s tax behaviour will be made public in
+future?”. The indicator is multiplied by 100, so units are
+interpreted as percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “Please tell me whether you think that someone not paying the
+property rates they owe KCCA is wrong and punishable?”. The
+indicator is multiplied by 100, so units are interpreted as
+percentage points.
+Indicator if the respondent yes rather than no, don’t know, or unsure
+to “If you had paid your rates, would you want others to know or
+not?”. The indicator is multiplied by 100, so units are interpreted
+as percentage points.
+Indicator for those survey respondents who answered the call for
+the endline phone survey
+Indicator for those survey respondents who picked up their phones
+and were either the individual listed in the KCCA registry, their
+heir, or their representative on tax matters.
+
+12
+
+Table A7: Survey attrition balance
+(1)
+
+(2)
+
+Respondent
+Completed
+Baseline
+(pp)
+
+Respondent
+Completed
+Endline
+(pp)
+
+Reporting
+
+0.73
+(3.49)
+
+2.82
+(2.17)
+
+Recognition
+
+-0.71
+(3.54)
+
+0.52
+(2.30)
+
+Panel A: Direct effects
+
+Enforcement
+
+-0.35
+(2.78)
+
+Reciprocity
+
+-0.20
+(2.82)
+
+Relationship
+58.0
+4110
+1947
+
+-0.82
+(2.87)
+59.9
+16529
+7886
+
+Respondent
+Completed
+Baseline
+(pp)
+
+Respondent
+Completed
+Endline
+(pp)
+
+Delinquent List
+
+3.39
+(3.37)
+
+-0.50
+(1.67)
+
+Complier List
+
+3.68
+(3.71)
+
+-1.03
+(1.78)
+
+Wealthy Complier List
+
+5.92
+(4.96)
+
+-1.84
+(2.76)
+
+Control Mean
+N
+N clusters
+
+54.7
+4185
+1986
+
+60.1
+17178
+8152
+
+Control Mean
+N
+N clusters
+
+Panel B: Indirect effects
+
+Note: This table presents coefficients from regressions of baseline characteristics on a dummy for
+whether the property owner completed our endline survey. Each observation is a property and only property owners
+targeted for the endline survey are included. Standard errors in parentheses are clustered at the mobile phone
+number level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+13
+
+Table A8: Direct (wave 1) Balance Tests
+Information
+
+Public Disclosure
+
+Paid 2020
+
+(1)
+Control
+Mean
+0.081
+
+Liability (mn UGX)
+
+0.29
+
+0.024
+(0.024)
+
+0.0038
+(0.018)
+
+0.026
+(0.023)
+
+0.0082
+(0.012)
+
+-0.0066
+(0.011)
+
+Type=Cmrcl.
+
+0.17
+
+-0.0010
+(0.0066)
+
+0.0067
+(0.0069)
+
+-0.00035
+(0.0063)
+
+0.0078
+(0.0050)
+
+0.0051
+(0.0055)
+
+Type=Other
+
+0.064
+
+-0.0036
+(0.0065)
+
+-0.014∗∗
+(0.0055)
+
+-0.0071
+(0.0064)
+
+-0.0046
+(0.0050)
+
+-0.0076
+(0.0050)
+
+km to CBD
+
+4.90
+
+0.0098
+(0.043)
+
+0.053
+(0.044)
+
+0.0052
+(0.042)
+
+0.014
+(0.036)
+
+0.018
+(0.035)
+
+Owner Liability
+
+21.0
+
+-2.93
+(2.83)
+
+-3.24
+(3.04)
+
+-0.24
+(5.06)
+
+6.11
+(6.66)
+
+0.54
+(3.30)
+
+Legal Entity
+
+0.045
+
+-0.0028
+(0.0074)
+
+-0.020∗∗∗
+(0.0065)
+
+-0.012∗
+(0.0070)
+
+0.0042
+(0.0072)
+
+-0.0016
+(0.0072)
+
+Pop. Dense. (th./sqkm)
+
+30.6
+
+3.27
+(3.63)
+
+0.35
+(1.54)
+
+-0.92
+(1.49)
+
+-0.011
+(1.14)
+
+-0.17
+(1.13)
+
+Village Pop. (th.)
+
+5.60
+
+-0.13
+(0.092)
+
+-0.17∗
+(0.091)
+
+0.028
+(0.095)
+
+0.021
+(0.072)
+
+0.13∗
+(0.072)
+
+Shr. Vlg. Paid 2020
+
+0.11
+
+0.0025
+(0.0027)
+
+-0.00055
+(0.0018)
+
+0.000029
+(0.0018)
+
+0.0024
+(0.0016)
+
+-0.0024
+(0.0015)
+
+Shr. Par. Paid 2020
+
+0.11
+
+-0.00052
+(0.0022)
+
+-0.0028∗
+(0.0016)
+
+0.00038
+(0.0016)
+
+0.0020
+(0.0016)
+
+-0.00092
+(0.0013)
+
+0.140
+
+0.004
+
+0.553
+
+0.303
+
+0.444
+
+Joint Orthogonality
+Chi-Squared Test
+(p-value)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+Enforce
+
+Reciprocity
+
+Relationship
+
+Reporting
+
+Recognition
+
+0.0034
+(0.0057)
+
+0.0050
+(0.0052)
+
+0.0029
+(0.0051)
+
+-0.00080
+(0.0034)
+
+-0.00063
+(0.0035)
+
+Note: This table presents coefficients from regressions of each baseline characteristic on treatment groups from wave one. Each observation
+is a property. Any property that is missing any baseline characteristic is dropped so that the sample is held constant for all specifications at
+170341 properties. Standard errors in parentheses are clustered at the mobile phone number level. The bottom row shows the p-values of a
+series of Joint Orthogonality Tests where we follow Özler et al. (2018): first estimate a Multinomial Logit where the dependent variable is
+the vector of wave one treatments, the explanatory variables are the variables in this table, and the base group is the control group. Then for
+each column, we test the null that the coefficients of explanatory variables that refer to the corresponding treatment group are jointly zero.
+Finally, we reestimate the Multinomial Logit using the Reporting group as a base group, and test the null that the coefficients that refer to the
+Recognition group are jointly zero giving a p-value of 0.217. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+14
+
+Table A9: Direct (wave 1) Treatment Effects with baseline controls
+(1)
+
+(2)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+
+Panel A: Public Disclosure Effects
+Reporting (𝜏𝑆 )
+
+0.619∗∗∗
+(0.214)
+
+0.821∗∗∗
+(0.241)
+
+1.013∗∗∗
+(0.202)
+
+Recognition (𝜏𝐻 )
+
+-0.545∗∗∗
+(0.190)
+
+-0.774∗∗∗
+(0.207)
+
+-1.017∗∗∗
+(0.201)
+
+Enforcement
+
+1.271∗∗∗
+(0.315)
+
+1.463∗∗∗
+(0.346)
+
+1.933∗∗∗
+(0.285)
+
+Reciprocity
+
+-0.112
+(0.309)
+
+-0.119
+(0.339)
+
+-0.200
+(0.286)
+
+Relationship
+
+-0.545∗∗
+(0.276)
+
+-0.605∗
+(0.315)
+
+-0.657∗∗
+(0.286)
+
+p-value (𝜏𝑆 + 𝜏𝐻 = 0)
+Control Mean
+N
+N clusters
+
+0.83
+3.4
+170341
+68362
+
+0.90
+4.3
+170341
+68362
+
+0.99
+5.4
+170341
+68362
+
+Panel B: Benchmark Effects
+
+Note: This table presents treatment effects from wave one. Each outcome is a measure of payments
+towards a property in wave one (may-june 2021) and are scaled to be interpretted as percentage points. Full
+definitions of outcomes are given in Appendix Tables A4 and A6. Each observation is a property and each model
+controls for randomisation strata fixed effects and baseline controls: (dummy if property paid liability in previous
+year (2019/20), property liability, a dummy for commercial properties, a dummy for other non-residential properties,
+distance to the city centre, total liability of property owner, a dummy if the property owner is a legal entity (not an
+individual), population and population density of the property’s village, and the share of properties paying their
+liability in the previous year at both the village and parish level.). Standard errors in parentheses are clustered at the
+mobile phone number level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+15
+
+Table A10: Direct (wave 1) Heterogeneous Treatment Effects
+dependent variable: Paid Liability (pp)
+(1)
+Annual
+Liability
+
+(2)
+Total
+Value
+
+(3)
+
+Property
+0.65∗∗
+(0.31)
+
+Owner
+0.94∗∗∗
+(0.29)
+
+Parish
+0.40
+(0.29)
+
+Village
+0.50∗
+(0.27)
+
+Reporting × T2
+
+0.13
+(0.36)
+
+-0.69
+(0.42)
+
+0.53
+(0.40)
+
+0.19
+(0.39)
+
+Reporting × T3
+
+-0.33
+(0.48)
+
+-0.31
+(0.47)
+
+-0.55
+(0.77)
+
+-0.11
+(1.07)
+
+Recognition
+
+-0.24
+(0.26)
+
+-0.065
+(0.27)
+
+-0.31
+(0.27)
+
+-0.36
+(0.25)
+
+Recognition × T2
+
+-0.091
+(0.30)
+
+-0.37
+(0.40)
+
+-0.057
+(0.37)
+
+-0.19
+(0.36)
+
+Recognition × T3
+
+-0.85∗∗
+(0.40)
+
+-0.71∗
+(0.42)
+
+-1.12∗
+(0.66)
+
+-0.89
+(0.93)
+
+T2
+
+0.54∗∗
+(0.23)
+
+1.12∗∗∗
+(0.35)
+
+0.14
+(0.28)
+
+0.29
+(0.27)
+
+T3
+
+1.69∗∗∗
+(0.30)
+
+2.27∗∗∗
+(0.38)
+
+1.31∗∗
+(0.51)
+
+1.59∗∗
+(0.68)
+
+T1 p-value (𝜏𝑆 + 𝜏𝐻 = 0)
+T2 p-value (𝜏𝑆 + 𝜏𝐻 = 0)
+T3 p-value (𝜏𝑆 + 𝜏𝐻 = 0)
+N
+N clusters
+Control Mean
+First Tercile
+Second Tercile
+
+0.39
+0.31
+0.24
+130805
+52173
+3.4
+97k
+211k
+
+0.07
+0.72
+0.80
+130257
+51956
+3.4
+2898k
+7367k
+
+0.86
+0.22
+0.17
+130805
+52173
+3.4
+6
+15
+
+0.76
+0.77
+0.60
+130805
+52173
+3.4
+8
+20
+
+Reporting
+
+(4)
+Baseline
+Compliance Rate
+
+Note: This table presents heterogeneous treatment effects from wave one. The sample is restricted to
+the control and public disclosure treatment groups (benchmark treatments are discarded). The outcome is always a
+dummy if at least the annual liability was paid in wave one (may-june 2021). We set the dummy as (0,100) so that
+the outcome can be interpretted as percentage points. Each column considers a different dimension of heterogeneity
+broken into terciles: annual liability of the property (col. 1), total property value owned by owner (col. 2), baseline
+compliance rate in the parish (col. 3), and baseline compliance rate in the village (col. 4). Each observation is a
+property and each model controls for randomisation strata fixed effects. Standard errors in parentheses are clustered
+at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+16
+
+Table A11: Direct (wave 1) Treatment Effects with sub-treatments
+(1)
+
+(2)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Reporting
+
+0.587∗∗
+(0.285)
+
+0.613∗∗
+(0.312)
+
+0.877∗∗∗
+(0.245)
+
+Reporting × Online
+
+-0.0160
+(0.324)
+
+0.409
+(0.389)
+
+0.253
+(0.283)
+
+Recognition
+
+-0.630∗∗∗
+(0.224)
+
+-0.820∗∗∗
+(0.252)
+
+-1.089∗∗∗
+(0.244)
+
+Recognition × Online
+
+0.159
+(0.254)
+
+0.0696
+(0.283)
+
+0.0660
+(0.282)
+
+Enforcement
+
+1.290∗∗∗
+(0.316)
+
+1.509∗∗∗
+(0.353)
+
+1.911∗∗∗
+(0.282)
+
+Reciprocity
+
+-0.0674
+(0.311)
+
+-0.0454
+(0.343)
+
+-0.159
+(0.283)
+
+Relationship
+
+-0.503∗
+(0.274)
+
+-0.520
+(0.317)
+
+-0.595∗∗
+(0.283)
+
+N
+N clusters
+Control Mean
+
+174304
+69584
+3.4
+
+174304
+69584
+4.2
+
+174304
+69584
+5.4
+
+Public Disclosure Effects
+
+Benchmark Effects
+
+Note: This table presents treatment effects from wave one. Treatments are interacted with sub-group
+treaments: the base sub-treatment is always public disclosure by text message. Each outcome is a measure of
+payments towards a property in wave one (may-june 2021): a dummy if at least the annual liability was paid (col.
+1), a dummy if some payment was made (col. 2), and the share of annual liability paid (col. 3). We set dummies as
+(0,100) so that these outcomes can be interpretted as percentage points. Each observation is a property and each
+model controls for randomisation strata fixed effects and baseline controls: (dummy if property paid liability in
+previous year (2019/20), property liability, a dummy for commercial properties, a dummy for other non-residential
+properties, distance to the city centre, total liability of property owner, a dummy if the property owner is a legal
+entity (not an individual), population and population density of the property’s village, and the share of properties
+paying their liability in the previous year at both the village and parish level.). Standard errors in parentheses are
+clustered at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+17
+
+Table A12: Direct (wave 1) effects in endline survey sample
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Share
+Liability
+Paid
+(pp)
+
+All
+Kampala
+Comply
+(pp)
+
+Rich
+Kampala
+Comply
+(pp)
+
+Own
+Village
+Comply
+(pp)
+
+Reporting
+
+-0.21
+(0.97)
+
+-0.26
+(1.09)
+
+-0.40
+(1.29)
+
+-2.00
+(1.75)
+
+-1.90
+(2.14)
+
+-2.56
+(1.64)
+
+Recognition
+
+-0.29
+(0.85)
+4.13
+7400
+3495
+
+-0.69
+(0.93)
+5.45
+7400
+3495
+
+-0.69
+(1.19)
+6.43
+7400
+3495
+
+0.28
+(1.48)
+50.81
+6238
+2939
+
+0.26
+(1.96)
+59.50
+6255
+2934
+
+0.40
+(1.58)
+33.27
+6192
+2903
+
+KCCA
+Detection
+Capacity
+(pp)
+
+KCCA
+Acts in
+Best
+Interest
+(pp)
+
+Tax
+Behav.
+Publish.
+in Future
+(pp)
+
+Unpaid
+Wrong
+and
+Punish.
+(pp)
+
+Compliance
+Better
+Kept
+Private
+(pp)
+
+Want
+others
+to know
+complied
+(pp)
+
+Reporting
+
+-0.37
+(2.03)
+
+1.32
+(2.88)
+
+-0.79
+(1.93)
+
+1.65
+(1.70)
+
+2.37
+(2.88)
+
+-1.93
+(2.92)
+
+Recognition
+
+-1.83
+(2.63)
+
+-1.05
+(2.76)
+
+-0.39
+(1.97)
+
+4.79∗
+(2.48)
+
+1.68
+(3.00)
+
+0.93
+(3.12)
+
+Control Mean
+N
+N clusters
+
+90.44
+7003
+3335
+
+45.50
+6793
+3231
+
+86.74
+6771
+3246
+
+10.93
+7400
+3495
+
+35.94
+6991
+3327
+
+60.65
+7112
+3349
+
+Panel A
+
+Control Mean
+N
+N clusters
+
+Panel B
+
+Note: This table presents treatment effects from wave one in the survey sample on payment and state
+belief outcomes. In panel A, outcomes vary by column: the first three columns are the same as those in Table 1, and
+the next three are beliefs about the compliance rate for all of Kampala, the richest 5% of owners by property value,
+and the other owners in the respondent’s own village. In panel B, outcomes vary by column: believes the KCCA
+can detect who pays tax (col. 1), believes the KCCA acts in the best interest of it’s citizens (col. 2), believes that tax
+behaviour will be publicly disclosed in the future (col. 3), believes that tax delinquency is wrong and punishable
+(col. 4), believes that tax behaviour is better kept private (col. 5), and believes they would want it known that they
+pay taxes if they comply (col. 6). Each observation is a property and each model controls for randomisation strata
+fixed effects. In all specifications we apply Inverse Probability of Attrition weights estimated from a logit regression
+on the baseline characteristics in Table A5. Standard errors in parentheses are clustered at the property owner level.
+Standard errors in parentheses are clustered at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+18
+
+Table A13: Direct (wave 1) Spillover Tests
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+1.45∗∗∗
+(0.35)
+
+(5)
+Share
+Liability
+Paid
+(pp)
+1.86∗∗∗
+(0.48)
+
+(6)
+Share
+Liability
+Paid
+(pp)
+1.89∗∗∗
+(0.48)
+
+Paid
+Liability
+(pp)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Any
+Payment
+(pp)
+
+Enforcement
+
+1.25∗∗∗
+(0.32)
+
+1.26∗∗∗
+(0.32)
+
+1.45∗∗∗
+(0.35)
+
+Reciprocity
+
+-0.24
+(0.30)
+
+-0.23
+(0.31)
+
+-0.24
+(0.34)
+
+-0.23
+(0.34)
+
+-0.38
+(0.48)
+
+-0.35
+(0.48)
+
+Relationship
+
+-0.54∗∗
+(0.27)
+
+-0.54∗∗
+(0.27)
+
+-0.55∗
+(0.32)
+
+-0.55∗
+(0.32)
+
+-0.70
+(0.46)
+
+-0.70
+(0.46)
+
+Reporting
+
+0.60∗∗∗
+(0.22)
+
+0.62∗∗∗
+(0.22)
+
+0.76∗∗∗
+(0.24)
+
+0.78∗∗∗
+(0.24)
+
+0.94∗∗∗
+(0.36)
+
+0.98∗∗∗
+(0.36)
+
+Recognition
+
+-0.56∗∗∗
+(0.20)
+
+-0.54∗∗∗
+(0.20)
+
+-0.81∗∗∗
+(0.22)
+
+-0.79∗∗∗
+(0.22)
+
+-1.05∗∗∗
+(0.32)
+
+-1.01∗∗∗
+(0.32)
+
+Share Nghbs. Benchmark
+
+0.28
+(0.49)
+
+0.25
+(0.49)
+
+0.56
+(0.55)
+
+0.52
+(0.55)
+
+0.63
+(0.75)
+
+0.58
+(0.75)
+
+Share Nghbs. Report
+
+0.060
+(0.48)
+
+0.10
+(0.48)
+
+0.44
+(0.55)
+
+0.49
+(0.55)
+
+0.62
+(0.74)
+
+0.70
+(0.74)
+
+Share Nghbs. Recognition
+
+-0.31
+(0.49)
+
+-0.32
+(0.49)
+
+-0.023
+(0.55)
+
+-0.042
+(0.55)
+
+-0.30
+(0.73)
+
+-0.32
+(0.73)
+
+3.4
+166406
+67883
+
+3.4
+166403
+67883
+
+4.3
+166406
+67883
+
+4.3
+166403
+67883
+
+5.4
+166406
+67883
+
+5.4
+166403
+67883
+
+N Nghbs. FE
+Control Mean
+N
+N clusters
+
+Note: This table presents treatment effects from wave one with spillover estimates from neighbours
+within 50m. Local exposure is measured as the share of distinct property owners within 50m of the property
+assigned to each treatment group: benchmark effects, reporting, and recognition. Columns 2,4, and 6 include FEs
+for the number of distinct property owners within 50m. The outcomes are the same as in Panel A of Table 1. We
+multiply this dummy by 100 so that these outcomes can be interpretted as percentage points. Each observation is a
+property and each model controls for randomisation strata fixed effects. Standard errors in parentheses are clustered
+at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+19
+
+Table A14: Indirect (wave 2) Balance Tests
+
+Paid 2020
+
+(1)
+Control
+Mean
+0.11
+
+Liability (mn UGX)
+
+0.34
+
+-0.022
+(0.016)
+
+-0.020
+(0.017)
+
+-0.019
+(0.029)
+
+Type=Cmrcl.
+
+0.18
+
+0.0035
+(0.0043)
+
+-0.0012
+(0.0047)
+
+0.0072
+(0.0067)
+
+Type=Other
+
+0.065
+
+-0.0031
+(0.0042)
+
+-0.0080∗
+(0.0043)
+
+-0.0079
+(0.0055)
+
+km to CBD
+
+4.90
+
+-0.034
+(0.029)
+
+-0.028
+(0.032)
+
+0.043
+(0.046)
+
+Owner Liability
+
+27.4
+
+-6.41
+(4.54)
+
+-4.49
+(5.03)
+
+-4.54
+(7.00)
+
+Legal Entity
+
+0.049
+
+-0.0069
+(0.0051)
+
+-0.0039
+(0.0061)
+
+0.0000050
+(0.0084)
+
+Pop. Dense. (th./sqkm)
+
+30.0
+
+1.97
+(1.28)
+
+0.60
+(1.10)
+
+-0.70
+(1.31)
+
+Village Pop. (th.)
+
+5.52
+
+-0.00088
+(0.061)
+
+-0.0068
+(0.065)
+
+-0.092
+(0.094)
+
+Shr. Vlg. Paid 2020
+
+0.11
+
+-0.0017
+(0.0016)
+
+-0.000058
+(0.0019)
+
+0.00082
+(0.0029)
+
+Shr. Par. Paid 2020
+
+0.11
+
+-0.0011
+(0.0014)
+
+-0.00079
+(0.0017)
+
+-0.00043
+(0.0026)
+
+0.200
+
+0.392
+
+0.589
+
+Joint Orthogonality
+Chi-Squared Test
+(p-value)
+
+(2)
+
+(3)
+
+Delinquent List
+
+Complier List
+
+-0.00068
+(0.0038)
+
+0.0047
+(0.0044)
+
+(4)
+Wealthy
+Complier List
+0.0047
+(0.0069)
+
+Note: This table presents coefficients from regressions of each baseline characteristic on treatment groups from wave two. Each observation
+is a property. Any property that is missing any baseline characteristic is dropped so that the sample is held constant for all specifications at
+173062 properties. Standard errors in parentheses are clustered at the mobile phone number level. The bottom row shows the p-values of a
+series of Joint Orthogonality Tests where we follow Özler et al. (2018): first estimate a Multinomial Logit where the dependent variable is the
+vector of wave two treatments, the explanatory variables are the variables in this table, and the base group is the control group. Then for each
+column, we test the null that the coefficients of explanatory variables that refer to the corresponding treatment group are jointly zero. Finally,
+we reestimate the Multinomial Logit using the Delinquent List group as a base group, and test the null that the coefficients that refer to the
+Compliers List group are jointly zero giving a p-value of 0.535. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+20
+
+Table A15: Indirect (wave 2) Treatment Effects with baseline controls
+(1)
+
+(2)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Delinquent List (𝜅 𝑆 )
+
+-0.639∗∗∗
+(0.175)
+
+-0.832∗∗∗
+(0.218)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+-1.294∗∗∗
+(0.333)
+
+Complier List (𝜅 𝐻 )
+
+-0.773∗∗∗
+(0.185)
+
+-0.788∗∗∗
+(0.257)
+
+-1.301∗∗∗
+(0.359)
+
+p-value (𝜅 𝑆 = 𝜅 𝐻 )
+Control Mean
+N
+N clusters
+
+0.41
+3.2
+158151
+62911
+
+0.85
+4.6
+158151
+62911
+
+0.98
+5.9
+158151
+62911
+
+Note: This table presents treatment effects from wave two. Each outcome is a measure of payments
+towards a property in wave two (nov-dec 2021) and are scaled to be interpretted as percentage points. Full
+definitions of outcomes are given in Appendix Tables A4 and A6. Each observation is a property and each model
+controls for randomisation strata fixed effects and baseline controls: (dummy if property paid liability in previous
+year (2019/20), property liability, a dummy for commercial properties, a dummy for other non-residential properties,
+distance to the city centre, total liability of property owner, a dummy if the property owner is a legal entity (not an
+individual), population and population density of the property’s village, and the share of properties paying their
+liability in the previous year at both the village and parish level.). Standard errors in parentheses are clustered at the
+mobile phone number level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+21
+
+Table A16: Indirect (wave 2) Heterogeneous Treatment Effects
+dependent variable: Paid Liability (pp)
+(1)
+Annual
+Liability
+
+(2)
+Total
+Value
+
+(3)
+
+Property
+-0.81∗∗∗
+(0.17)
+
+Owner
+-0.54∗∗∗
+(0.19)
+
+Parish
+-0.71∗∗∗
+(0.23)
+
+Village
+-0.92∗∗∗
+(0.22)
+
+Delinquent List × T2
+
+0.21
+(0.22)
+
+-0.30
+(0.28)
+
+-0.091
+(0.32)
+
+0.45
+(0.31)
+
+Delinquent List × T3
+
+0.31
+(0.38)
+
+-0.074
+(0.37)
+
+0.52
+(0.62)
+
+0.47
+(0.81)
+
+Complier List
+
+-0.67∗∗∗
+(0.19)
+
+-0.70∗∗∗
+(0.19)
+
+-1.11∗∗∗
+(0.23)
+
+-1.10∗∗∗
+(0.21)
+
+Complier List × T2
+
+-0.13
+(0.24)
+
+-0.0057
+(0.30)
+
+0.33
+(0.33)
+
+0.50∗
+(0.30)
+
+Complier List × T3
+
+-0.15
+(0.41)
+
+-0.18
+(0.38)
+
+0.80
+(0.64)
+
+0.66
+(0.92)
+
+T2
+
+0.51∗∗∗
+(0.17)
+
+0.92∗∗∗
+(0.24)
+
+0.19
+(0.26)
+
+0.066
+(0.23)
+
+T3
+
+2.17∗∗∗
+(0.28)
+
+2.08∗∗∗
+(0.29)
+
+0.98∗∗
+(0.46)
+
+1.45∗∗
+(0.63)
+
+T1 p-value (𝜅 𝑆 = 𝜅 𝐻 )
+T2 p-value (𝜅 𝑆 = 𝜅 𝐻 )
+T3 p-value (𝜅 𝑆 = 𝜅 𝐻 )
+N
+N clusters
+Control Mean
+First Tercile
+Second Tercile
+
+0.42
+0.30
+0.36
+161709
+64004
+3.1
+97k
+211k
+
+0.38
+0.51
+0.37
+161002
+63712
+3.1
+2899k
+7367k
+
+0.04
+0.89
+0.84
+161709
+64004
+3.1
+6
+15
+
+0.32
+0.57
+0.99
+161709
+64004
+3.1
+8
+20
+
+Delinquent List
+
+(4)
+Baseline
+Compliance Rate
+
+Note: This table presents heterogeneous treatment effects from wave two. The sample is restricted to
+the control and public disclosure treatment groups (the recognition of wealthy treatment group is discarded). The
+outcome is always a dummy if the property paid their annual liability in wave two (nov-dec 2021). We set the
+dummy as (0,100) so that the outcome can be interpretted as percentage points. Each column considers a different
+dimension of heterogeneity broken into terciles: annual liability of the property (col. 1), total property value owned
+by owner (col. 2), baseline compliance rate in the parish (col. 3), and baseline compliance rate in the village (col.
+4). Each observation is a property and each model controls for randomisation strata fixed effects. Standard errors in
+parentheses are clustered at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+22
+
+Table A17: Indirect (wave 2) Treatment Effects with sub-treatments
+(1)
+
+(2)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Delinquent List
+
+-0.868∗∗∗
+(0.234)
+
+-1.130∗∗∗
+(0.300)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+-1.619∗∗∗
+(0.409)
+
+Delinquent List × Online
+
+0.339
+(0.264)
+
+0.366
+(0.342)
+
+0.470
+(0.461)
+
+Delinquent List × Neighbours
+
+0.334
+(0.275)
+
+0.422
+(0.353)
+
+0.480
+(0.491)
+
+Complier List
+
+-0.751∗∗∗
+(0.239)
+
+-0.699∗∗
+(0.308)
+
+-1.305∗∗∗
+(0.431)
+
+Complier List × Online
+
+0.0465
+(0.301)
+
+0.0220
+(0.487)
+
+0.327
+(0.589)
+
+Complier List × Neighbours
+
+-0.0573
+(0.285)
+
+-0.268
+(0.382)
+
+-0.253
+(0.499)
+
+Wealthy Complier List
+
+-0.258
+(0.408)
+
+-0.352
+(0.507)
+
+-0.763
+(0.603)
+
+N
+N clusters
+Control Mean
+
+176762
+69853
+3.1
+
+176762
+69853
+4.6
+
+176762
+69853
+0.0
+
+Note: This table presents treatment effects from wave two. Treatments are interacted with sub-group
+treaments: the base sub-treatment is always an SMS list of compliers (for recognition) or delinquents (for reporting)
+drawn randomly from the city. Each outcome is a measure of payments towards a property in wave two (nov-dec
+2021): a dummy if at least the annual liability was paid (col. 1), a dummy if some payment was made (col. 2), and
+the share of annual liability paid (col. 3). We set dummies as (0,100) so that these outcomes can be interpretted as
+percentage points. Each observation is a property and each model controls for randomisation strata fixed effects and
+baseline controls: (dummy if property paid liability in previous year (2019/20), property liability, a dummy for
+commercial properties, a dummy for other non-residential properties, distance to the city centre, total liability of
+property owner, a dummy if the property owner is a legal entity (not an individual), population and population
+density of the property’s village, and the share of properties paying their liability in the previous year at both
+the village and parish level.). Standard errors in parentheses are clustered at the property owner level. ∗ 𝑝 < 0.1,
+∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+23
+
+Table A18: Indirect (wave 2) effects on compliance and beliefs
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Share
+Liability
+Paid
+(pp)
+
+All
+Kampala
+Comply
+(pp)
+
+Rich
+Kampala
+Comply
+(pp)
+
+Own
+Village
+Comply
+(pp)
+
+Delinquent List
+
+-1.69∗∗
+(0.66)
+
+-2.40∗∗∗
+(0.79)
+
+-3.25∗∗∗
+(1.23)
+
+-2.29∗∗
+(1.16)
+
+-4.59∗∗∗
+(1.54)
+
+-0.57
+(1.22)
+
+Complier List
+
+-1.79∗∗
+(0.74)
+4.41
+7230
+3458
+
+-2.17∗∗
+(0.91)
+6.09
+7230
+3458
+
+-3.69∗∗∗
+(1.33)
+8.05
+7230
+3458
+
+-1.58
+(1.26)
+52.62
+7230
+3458
+
+-3.52∗∗
+(1.56)
+62.19
+7230
+3458
+
+1.25
+(1.33)
+34.05
+7230
+3458
+
+KCCA
+Detection
+Capacity
+(pp)
+
+KCCA
+Acts in
+Best
+Interest
+(pp)
+
+Tax
+Behav.
+Publish.
+in Future
+(pp)
+
+Unpaid
+Wrong
+and
+Punish.
+(pp)
+
+Compliance
+Better
+Kept
+Private
+(pp)
+
+Want
+others
+to know
+complied
+(pp)
+
+Delinquent List
+
+-1.73
+(1.65)
+
+-0.31
+(2.43)
+
+-1.69
+(1.84)
+
+-0.38
+(1.80)
+
+4.66∗∗
+(2.32)
+
+-4.18∗
+(2.39)
+
+Complier List
+
+-0.13
+(1.94)
+
+2.14
+(2.55)
+
+-1.74
+(2.10)
+
+-3.05
+(1.95)
+
+-0.19
+(2.36)
+
+0.42
+(2.54)
+
+Control Mean
+N
+N clusters
+
+87.04
+7230
+3458
+
+45.45
+7230
+3458
+
+82.74
+7230
+3458
+
+14.25
+7230
+3458
+
+31.00
+7230
+3458
+
+62.16
+7230
+3458
+
+Panel A
+
+Control Mean
+N
+N clusters
+
+Panel B
+
+Note: This table presents treatment effects from wave two in the survey sample on payment and state
+belief outcomes. In panel A, outcomes vary by column: the first three columns are the same as those in Table 1, and
+the next three are beliefs about the compliance rate for all of Kampala, the richest 5% of owners by property value,
+and the other owners in the respondent’s own village. In panel B, outcomes vary by column: believes the KCCA
+can detect who pays tax (col. 1), believes the KCCA acts in the best interest of it’s citizens (col. 2), believes that tax
+behaviour will be publicly disclosed in the future (col. 3), believes that tax delinquency is wrong and punishable
+(col. 4), believes that tax behaviour is better kept private (col. 5), and believes they would want it known that
+they pay taxes if they comply (col. 6). Each observation is a property and each model controls for randomisation
+strata fixed effects. Standard errors in parentheses are clustered at the property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05,
+∗∗∗ 𝑝 < 0.01.
+
+24
+
+Table A19: Indirect (wave 2) Spillover Tests
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Paid
+Liability
+(pp)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Any
+Payment
+(pp)
+
+Delinquent List
+
+-0.68∗∗∗
+(0.17)
+
+-0.67∗∗∗
+(0.17)
+
+-0.89∗∗∗
+(0.21)
+
+Complier List
+
+-0.84∗∗∗
+(0.18)
+
+-0.85∗∗∗
+(0.18)
+
+Share Nghbs. Delinquent List
+
+-0.031
+(0.38)
+
+Share Nghbs. Complier List
+
+N Nghbs. FE
+Control Mean
+N
+N clusters
+
+-0.87∗∗∗
+(0.21)
+
+(5)
+Share
+Liability
+Paid
+(pp)
+-1.35∗∗∗
+(0.32)
+
+(6)
+Share
+Liability
+Paid
+(pp)
+-1.34∗∗∗
+(0.32)
+
+-0.93∗∗∗
+(0.23)
+
+-0.94∗∗∗
+(0.23)
+
+-1.43∗∗∗
+(0.34)
+
+-1.44∗∗∗
+(0.34)
+
+0.013
+(0.38)
+
+0.020
+(0.50)
+
+0.079
+(0.50)
+
+0.050
+(0.70)
+
+0.12
+(0.71)
+
+-0.074
+(0.40)
+
+-0.070
+(0.40)
+
+-0.047
+(0.49)
+
+-0.039
+(0.49)
+
+-0.46
+(0.69)
+
+-0.45
+(0.69)
+
+3.1
+154011
+62413
+
+3.1
+154008
+62413
+
+4.5
+154011
+62413
+
+4.5
+154008
+62413
+
+5.8
+154011
+62413
+
+5.9
+154008
+62413
+
+Note: This table presents treatment effects from wave two with spillover estimates from neighbours
+within 50m. Local exposure is measured as the share of distinct property owners within 50m of the property
+assigned to each treatment group: delinquent list, and complier list. Columns 2,4, and 6 include FEs for the number
+of distinct property owners within 50m. The outcomes are the same as in Panel B of Table 1. We multiply this
+dummy by 100 so that these outcomes can be interpretted as percentage points. Each observation is a property and
+each model controls for randomisation strata fixed effects. Standard errors in parentheses are clustered at the
+property owner level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+25
+
+Table A20: Direct (wave 1) by Indirect (wave 2) treatment effects on wave 2 outcomes
+
+(1)
+
+(2)
+
+Paid
+Liability
+(pp)
+
+Any
+Payment
+(pp)
+
+Delinquent or Complier List
+
+-0.801∗∗∗
+(0.268)
+
+-1.095∗∗∗
+(0.307)
+
+(3)
+Share
+Liability
+Paid
+(pp)
+-1.494∗∗∗
+(0.536)
+
+Delinquent or Complier List ×Same
+Framing Wave One
+
+0.297
+(0.356)
+
+0.495
+(0.410)
+
+0.494
+(0.749)
+
+Delinquent or Complier List
+×Opposite Framing Wave One
+
+0.0858
+(0.354)
+
+0.221
+(0.411)
+
+-0.109
+(0.730)
+
+Control Mean
+N
+N clusters
+
+2.5
+115104
+46451
+
+3.5
+115104
+46451
+
+4.9
+115104
+46451
+
+Note: This table presents heterogeneity of wave two treatment groups of treatment effects by treatment
+groups in wave one. We pool the Delinquent List and Complier List treatments from wave two, and interact
+this with having recieved the same framing in wave one (i.e. recognition for complier lists and reporting for
+delinquent lists) and again with having recieved the opposite framing in wave one (i.e. reporting for complier lists
+and recognition for delinquent lists). The sample includes all properties that were in both wave one and wave two,
+and drops those that were in wave one Benchmark or wave two Wealthy Compliers groups. The outcomes are the
+same as in Panel B of Table 1. Each observation is a property and each model controls for randomisation strata
+(including wave one treatment groups) fixed effects. Standard errors in parentheses are clustered at the mobile
+phone number level. ∗ 𝑝 < 0.1, ∗∗ 𝑝 < 0.05, ∗∗∗ 𝑝 < 0.01.
+
+26
+
+C
+
+Model for direct effects of public disclosure
+
+Here we elaborate on the model summarized in Section 5. We extend the Allingham and Sandmo
+(1972) model of tax evasion to incorporate social image effects. For social image effects we start
+with the more general framework from Bursztyn and Jensen (2017) and then simplify in order to
+tie it more closely with our empirical setting. The model provides a structural framework to
+interpret our empirical estimates of public disclosure effects.
+Each tax liable property owner gets utility depending on their decision to evade the tax or
+not, 𝑒 ∈ {0, 1}. Evasion can affect utility through social 𝑠 payoffs and other payoffs 𝑢 including
+monetary penalties and intrinsic motivation. To keep the problem tractable, we treat these as
+additively separable in utility following Gordon (1987). For notational convenience we denote
+each of these payoffs as the utility value for compliers plus the net expected utility value for
+evaders, e.g., 𝑠0 + 𝑒 · 𝑠 where 𝑠0 is the expected utility from social payoffs given the choice to
+comply, and 𝑠 is the net expected utility if choosing to evade. There is an idiosyncratic preference
+for compliance 𝑣 with CDF 𝐹 (𝑣). Therefore, utility is given by: 𝑈 (𝑒) = 𝑢 0 +𝑠0 +𝑒(𝑢+𝑠) + (1−𝑒)𝑣.
+Given this random utility setup, a utility maximizing property owner will choose to evade if
+𝑣 < 𝑢 + 𝑠, which allows us to write the aggregate evasion rate as 𝜆 = 𝐹 (𝑢 + 𝑠).
+
+C.1
+
+Social image payoffs
+
+Our analytical focus is on the social dimensions of the motivation to pay. In order to make it
+clear which types of social image effects we aim to identify, we follow the general framework of
+Bursztyn and Jensen (2017) and then narrow the focus to better tie with our empirical setting.
+First, it is possible that there are different ‘reference groups’ that matter for social image concerns.
+In the analysis here we only consider a representative reference group.33 Then an individual
+receives social payoffs from this representative reference group:
+𝑠𝑡 (𝑒) = 𝛿𝑡 E(𝜔𝑡 )Pr(𝑡|𝑒)
+
+(7)
+
+where Pr(𝑡|𝑒) is the probability the reference group perceives the individual’s type to be 𝑡
+conditional on the individual’s evasion decision, 𝑒. In the analysis that follows, this will be the
+key dimension through which public disclosure policy influences the evasion decision. The term
+𝐸 (𝜔𝑡 ) captures the individual’s expectation about the social desirability of being perceived as 𝑡.
+The term 𝛿𝑡 captures how much the individual cares about being perceived as 𝑡.
+We consider two categories of perceived types, 𝑡 ∈ {𝑜, 𝑑}. First, an individual can be
+perceived as owner of tax-liable property, 𝑜. Second, conditional on being perceived as an owner,
+an individual can be perceived as a property tax delinquent, 𝑑. In our empirical setting we will
+not attempt to distinguish the 𝛿 and 𝜔 terms and so simplify as 𝑠 𝑜 ≡ 𝛿 𝑜 𝐸 (𝜔 𝑜 ) and 𝑠 𝑑 ≡ 𝛿 𝑑 𝐸 (𝜔 𝑑 ).
+33In our experimental sub-treatments, we do vary the reference group that public disclosure targets (neighbors or
+the city as a whole). However we do not find evidence of heterogeneity by the groups that we tested.
+
+27
+
+In other words, there is a potential payoff 𝑠 𝑜 to being perceived as an owner of tax-liable property,
+and a potential additional payoff 𝑠 𝑑 to being known as a delinquent. For example, an agent may
+bear a shame cost, 𝑠 𝑑 < 0, if the public imposes pro-compliance social sanctions, 𝜔 𝑑 < 0, and
+individuals tend to be conformist, 𝛿 𝑑 > 0. As another example, an individual may face a privacy
+cost, 𝑠 𝑜 < 0, if the reference group sees property owners as more able to provide favours, 𝜔 𝑜 > 0,
+but individuals prefer to avoid providing favours, 𝛿 𝑜 < 0.34 Finally, for notational convenience
+we denote Pr(𝑜|𝑒) = 𝑝 𝑜𝑒 and Pr(𝑑|𝑒) = 𝑝 𝑒𝑑 .
+Therefore the net social image benefit to evasion can be written as 𝑠 = [ 𝑝 1𝑜 −𝑝 0𝑜 ]𝑠 𝑜 +[ 𝑝 1𝑑 −𝑝 0𝑑 ]𝑠 𝑑 .
+Together this gives us a structural equation for the aggregate evasion rate:
+𝜆 = 𝐹 (𝑢 + [ 𝑝 1𝑜 − 𝑝 0𝑜 ]𝑠 𝑜 + [ 𝑝 1𝑑 − 𝑝 0𝑑 ]𝑠 𝑑 )
+
+(8)
+
+This is the formulation of the evasion rate that we will analyse in the following sub-section
+to help us interpret empirical estimates of direct effects from our experiment.
+
+C.2
+
+Analysis of public disclosure policies
+
+In this section we examine the share of evaders under different public disclosure policy regimes
+denoted {𝐶, 𝑆, 𝐻}, where 𝐶 denotes no public disclosure (control), 𝑆 denotes public reporting,
+and 𝐻 public recognition. These states represent our empirical treatments outlined in Section 4.
+The government’s choice of policy regime will affect both the probabilities of being perceived as
+a property owner, 𝑝 𝑜𝑒 , and the probabilities of being perceived as a property tax delinquent, 𝑝 𝑒𝑑 .
+The counterfactual exercise we consider here holds all other payoffs constant.
+C.2.1
+
+Baseline perceptions and chance of public disclosure discovery
+
+We introduce 𝜃 as the individual’s perceived chance of being discovered through the public
+disclosure program. We think of “discovery” as the probability that people in the reference
+group identify the individual through the policy. For example, not everyone who is delinquent
+and reported through the public disclosure program will be discovered since text message
+dissemination may be ignored, people may not take the time to read online lists, etc. If an agent
+is not discovered through the public disclosure program, they face baseline probabilities denoted
+with an underline, i.e. 𝑝 𝑑 and 𝑝 𝑜 . Further we simplify 𝑝 𝑜 = 𝑝 𝑜 implicitly assuming that, without
+𝑒
+𝑒
+𝑒
+public disclosure, the decision to evade does not affect the likelihood that one is detected as a
+property owner.
+Next, we outline how each public disclosure regime affects the probabilities of being perceived
+as a particular type. If an agent is discovered through a public disclosure program their disclosed
+34While it is intuitive to think of privacy and shame costs, we do not impose signs on either 𝑠 𝑜 or 𝑠 𝑑 and leave
+these as empirical questions. Further, as in Bursztyn and Jensen (2017) the social image term in the utility function
+might arise from instrumental (e.g. your reference group excludes you from social networks) or hedonic (e.g. you
+get a bad feeling when strangers think you are a tax delinquent) motivations, and we do not try to separate these.
+
+28
+
+types are known with certainty. So, under the reporting regime, an agent who chooses to evade is
+believed with certainty to be a delinquent owner if they are discovered, and otherwise they take
+the baseline probabilities for an evader, i.e. 𝑝 1𝑜 = 𝜃 · 1 + (1 − 𝜃) 𝑝 𝑜 and 𝑝 1𝑑 = 𝜃 · 1 + (1 − 𝜃) 𝑝 𝑑 .
+1
+Alternatively, an agent who chooses to comply in the reporting regime faces baseline probabilities.
+Under the recognition regime, an agent who chooses to comply is believed with certainty to be a
+compliant owner if they are discovered, and otherwise they take the baseline probabilities for a
+complier, i.e. 𝑝 0𝑜 = 𝜃 · 1 + (1 − 𝜃) 𝑝 𝑜 and 𝑝 0𝑑 = 𝜃 · 0 + (1 − 𝜃) 𝑝 𝑑 . Alternatively an agent who
+0
+chooses to evade in the recognition regime faces the baseline probabilities of perceived status.
+C.2.2
+
+Getting an expression for treatment effects
+
+Plugging the perceived probabilities under each regime back in to equation 8 and simplifying
+notation by denoting the baseline regime net benefits of evasion as 𝐵 ≡ 𝑢 + 𝑠 𝑑 [ 𝑝 𝑑 − 𝑝 𝑑 ], the
+1
+0
+share of evaders under each regime will be:
+𝜆𝐶 =𝐹 (𝐵)
+𝜆 𝑆 =𝐹 (𝐵 + 𝜃 [𝑠 𝑜 (1 − 𝑝 𝑜 ) + 𝑠 𝑑 (1 − 𝑞 𝑑 )])
+1
+
+𝜆 𝐻 =𝐹 (𝐵 + 𝜃 [−𝑠
+
+𝑜
+
+𝑜
+
+(1 − 𝑝 ) + 𝑠 𝑑 𝑞 𝑑 ])
+0
+
+We assume that public disclosure policies induce a small enough change in expected
+payoffs that their effect on compliance can be approximated by a first order Taylor series, i.e.
+𝐹 (𝑣) ≈ 𝐹 (𝐵) + (𝑣 − 𝐵)𝐹 0 (𝐵). Therefore, the direct effect of public reporting 𝜏𝑆 and public
+recognition 𝜏𝐻 on compliance (note that compliance is 1 − 𝜆) can be expressed as:
+𝜏𝑆 ≡ 𝜆𝐶 − 𝜆 𝑆 = − 𝜃 [𝑠 𝑜 (1 − 𝑝 𝑜 ) + 𝑠 𝑑 (1 − 𝑝 𝑑 )]𝐹 0 (𝐵)
+𝜏𝐻 ≡ 𝜆𝐶 − 𝜆 𝐻 = − 𝜃 [−𝑠
+
+𝑜
+
+1
+𝑑 𝑑
+(1 − 𝑝 ) + 𝑠 𝑝 ]𝐹 0 (𝐵)
+0
+𝑜
+
+which are equations 4 and 5 in the main text. Also mentioned in the main text, effects will be
+zero if there is no chance of discovery (𝜃 = 0), or that no variation in the idiosyncratic motivation
+to comply near the baseline state (𝐹 0 (𝐵) = 0). There are also some edge cases that could lead to
+zero effects.35 We can discard these theoretical cases, however, based on our empirical results in
+Section 6.1 which find that both reporting and recognition effects are significantly different from
+zero.
+35There will be no effect of reporting when property owner status is believed with certainty at baseline (𝑝 𝑜 = 1)
+and the probability of being believed as a delinquent under evasion is also believed with certainty (𝑝 𝑑 = 1). Likewise,
+1
+there will be no effect of recognition when (𝑝 𝑜 = 1) and (𝑝 𝑑 = 0).
+0
+
+29
+
+D
+
+Sub-treatment direct and indirect effects by mode
+
+In Table A11 we break down direct public disclosure effects by mode. We find no evidence that
+the direct effects of public disclosure (recognition or reporting) vary by whether disclosure will
+be online rather than SMS.
+In Table A17 we breakdown indirect public dissemination effects by mode and sample. Again,
+we find no evidence that the indirect effects of public dissemination (Complier or Delinquent
+Lists) vary by whether the taxpayers disclosed are sample from the city as a whole, the local
+neighbourhood, or posted to a searchable online list.
+Why is there no heterogeneity in terms of public disclosure mode, i.e. SMS or online lists particularly for indirect effects? We explore this further in our endline survey, where we ask
+taxpayers about messages they received over the course of the year. In general, there does not
+appear to be accurate recall regarding receiving a link to an online list - out of those taxpayers
+who received a message, 11% recall the message containing a link, but this 11% holds even when
+we focus on only those that were in a treatment group with a link. Further, only 15% of those
+claiming to have received a link report opening it. This suggests that the added effort and/or
+phone capacity needed to open online links limits the effectiveness of sending information in
+this way. Therefore, given that we find effects of similar magnitude for SMS and online lists, it
+could be that the treatment on the treated effects for online lists are much larger, or simply that
+many respondents pay similarly limited attention to the SMS lists.
+
+E
+
+Follow-up survey: selected quotations
+
+In this section we report a broad and representative sample of quotes from our follow up survey
+respondents. Quotes are categorized by topic.
+
+E.1
+
+Public ownership costs
+
+E.1.1
+
+Financial Favours
+
+• 302: “If it is known that so and so is a landlord and many don’t know I will get problems sixfold.
+Someone would expect money from me because of what he sees. So they would expect much from
+you. They believe you have money and if they come any time you should be able to give them. No
+doubt about that. You find so many people who would come to borrow money from you.”
+• 22320: “We have people at home who don’t know that you have a property somewhere and you get
+some money from it. But should they know they start pinning you "You get this and that money.
+We want this and that" and they demand forcefully."
+• 352: “When they know you are the owner of that building the family is on your neck.”
+
+30
+
+E.1.2
+
+Access to / paying back loans
+
+• 22340: “Currently most people live on loans. Now if that list is published someone who loaned
+you money comes to know about it don’t you see him coming to you anytime?”
+• 1262: “Yes because let’s say you owe some people money. When they get to know that you own
+property they come demanding for their money.”
+• 1228: “When they see a building like that and come to know that you are a landlady they would
+say ’No this person lied to us. She can afford the school fees. We shall not give her a bursary. Let
+her pay the fees.”’
+
+E.1.3
+
+Robbery/violence
+
+• 1216: “You can even be living with someone when you don’t know how much they earn. And
+people don’t want to open up. There are some reasons because even the people you are with after
+telling them you have such a property take it wrongly or might even want to seal it and use it for
+their own purpose. They can be dangerous to you. I have this bad feeling that people usually don’t
+open up much on the property they own. ...Not everybody has a positive attitude towards people
+having things."
+• 1231: “Take an example if all it is a high place like say Kololo the value sometimes people target
+that for bad intentions. They say ’This man has these things around him. We can do away with
+him and get the money!”’
+• 33404: “Like there are so many thieves around they get to know that you have such kind of wealth
+you must be having money. You see sometimes even seeing where you work then they come and
+attack you at night. So now if they know you have a number of rental properties they come and
+attack you demanding for money because the month has ended since they imagine the tenants have
+paid you.”
+
+E.1.4
+
+Resentment from others
+
+• 954: “Some people hire others to hurt you while others decide to do it by witchcraft.”
+
+E.2
+
+More Taxes from URA
+
+• 22721: “URA will come to know about and tax impose more tax.”
+
+E.2.1
+
+Revealing illicit ownership
+
+• 1231: “Land has never been straight and there are a lot of interests when it comes to land, more so
+when you disclose the ownership. If it is the right ownership it is okay. But when it comes via the
+wrong motives, it becomes dangerous.”
+• 123: “They may say you stole the money. They may say you stole the property. The property is not
+yours you grabbed it from another person. Those kinds of things.”
+
+31
+
+• 337: “Most probably by nature they don’t want to be exposed or maybe because of the way they
+got the money still or the position of work they hold wherever they work from. And they want to
+be discreet in what they ownI think Africans have a mentality of let’s keep our wealth in brick and
+mortar. So you find that most of these apartments that are coming up most of these commercial
+properties that are coming up are as a result of let me just quote ‘unclean money.”’
+
+E.2.2
+
+Fighting within the family
+
+• 128: “There are some laws which had been passed sometimes back that the moment you have
+married a wife and she’s a married wife any properties of yours the moment you die they will have
+to shareThe woman maybe you even got the property before you married her ah? So if it comes to
+death she will come and claim what she has not worked for.”
+• 221547: “Even the children can be a threat. The current generation of children is unbelievable.
+One can say let’s eliminate her so we can get the property. That is the world we are in. Everyone
+knows the kind of people they live with.”
+• 440: “For example if he has more than one wife it is possible one of them may not know about
+some of his properties.” “Due to a lack of trust in one of the wives he decides to hide information
+about his properties from her. So if the wife finds out from the public list it could bring about fights
+within the family because she would feel hurt and accuse him of mistrust...One of the disadvantages
+of his relatives knowing about his properties is the possibility of them fighting over the inheritance
+if he passes away therefore causing instability in the home.”
+
+E.3
+
+Public ownership benefits
+
+E.3.1
+
+Pride in wealth
+
+• 151: “An advantage would be prestige. Because people didn’t know that you own an aeroplane.
+Now they know you have an aeroplane. They would look at you in another level.” [on benefits of
+public ownership knowledge]
+
+E.3.2
+
+Security of tenure
+
+• 1231: “Maybe for people who are directly involved in land wrangles because if I am at all a
+neighbor to somebody the list is there and in the system they are saying you are the rightful owner
+it sends a message to the other party.”
+
+E.3.3
+
+Access to loans
+
+• 22744: “When he wants to take a loan and they know he owns property it would be easy to lend
+him money unlike if he does not have any such things because the lender would wonder where he
+would find the money to pay back. A landlord can use his property as collateral for a loan to start
+another business.”
+
+32
+
+E.4
+
+Public delinquency costs
+
+E.4.1
+
+Seen as immoral
+
+• 440: “Most people are quick to judge others without fully understanding the circumstances.
+You may come and tell me that for this house you would pay 150000 shillings for it but the
+fact would be that the house goes for 80000 shillings. So these people would quickly judge
+you without understanding the taxes over which you are being apprehended and how it was
+determined/evaluated.”
+
+E.4.2
+
+Seen as Poor
+
+• 221102: “Even money lenders who would access that information would not lend you money
+because they would assume you would not pay it back.”
+
+E.4.3
+
+Not contributing their fair share
+
+• 221102: “I think you would be associated with someone who does not wish his country well. It is
+like you don’t wish your own Country well You are not contributing your share.”
+• 22325: “People will start discussing you in public ’You see that man doesn’t pay taxes and so on
+and so on. ... it is an embarrassment for him before his friends brothers and so on. They will say
+he is stubborn. He is a defaulter. Some people default not because they don’t have the money but
+they choose to not pay taxes. Public services come from the taxes and so if they are not there
+people will say it’s because of his defaultness.”’
+
+E.4.4
+
+Issues with tenants
+
+• 22744: “Even the tenants get worried because they know that any time the premises may be locked
+up. We see this happening even in this area. So one can incur costs for not paying.”
+
+E.5
+
+Public Compliance Benefits
+
+E.5.1
+
+Encouraging tenants to pay
+
+• 1231: “When I am talking to my tenants I have proof that really I need the rental money on the
+first of every month. I have a background that really I’m not the only one needing the money but it
+is a responsibility also for me to pay the taxes in time.”
+
+E.6
+
+Year 1 messages sending a signal about compliance
+
+• 221102: “Actually by the time they decide to send such a message it means people are not paying.”
+“This message indicates that people are not paying.” [after seeing year 1 reporting message]
+
+33
+
+E.7
+
+Indirect Effect Mechanisms
+
+E.7.1
+
+Higher compliance beliefs from complier lists
+
+• 123: “KCCA wouldn’t have released this if the number of people who paid had not increased.”
+• 337: “I feel by the time they send these messages they are only trying to awaken those who are still
+asleep but they have a substantial number of people who have complied. And that is why they feel
+confident to put their names out.”
+
+E.7.2
+
+Lower compliance beliefs from complier lists
+
+• 123: 22718: “From these names I could look for those who were compliant and here they are
+missing from this list. It can make me think that since so and so are not on the list it seems the
+number of those paying has reduced.”
+• 33404: “Based on these people shown here I feel that a lot more people could have paid than are
+shown here. But when only these people are shown as those who paid their balances it shows that
+the number had reduced. This is because they could have communicated in percentages those who
+paid and those who did not pay like 50%. Or that those who paid are like 70% then you would
+think that ’I may be amongst the remaining 30% that has not paid. Let me also go and pay.’ But
+from the message since just a few people who paid are listed it is discouraging. Many people
+would say let me just pay what I can.”
+
+E.7.3
+
+KCCA acting unfairly in using public disclosure
+
+• 1231: “Not relevant to me now to publish another list to other people. Let it be a business between
+me and KCCA. Not with the rest of the people because we also have different scenarios. Yeah we
+are all property owners but have different challenges.”
+• 1008: [Listing people will] “harden their hearts”
+
+E.8
+
+Low tax morale
+
+E.8.1
+
+Lack of adequate public services
+
+• 221509: “To be proud of your tax payment means getting back benefits from the people you paid
+taxes to. In that case you feel proud about what you have done. But here you pay and you are not
+getting anything. Talk about the KCCA taxes we pay but waste management is so poor and many
+other things.”
+• 352: “We feel even the taxes are not being used to our benefit. So, we would not care if you pay, or
+if you don’t payif you pay, it is not going to benefit me. I don’t know, I don’t see where it benefits
+me. So, if you pay or don’t pay, it’s the same.”
+• 22309: “KCCA is like a bottomless pit. Paying taxes taxes taxes but what is there to show? Why
+can’t they give back to the communities? Maybe there’s something positive but I’ve never really
+
+34
+
+gone out and seen it. But what I’ve realized is most of the communities do things for themselves. ”
+[in response to year 2 reporting message which says “contribute to the essential services for the
+city”]
+• 1231: “When you look at the environment of Kololo it is quite different from here. But remember
+we are all contributing to the national cake of development. And we have projections. If at all
+KCCA would come and say that within [respondent area] here this is our plan. For [respondent
+area]. I also get that urge to really pay the taxes because I have seen where our plan is projected.”
+• 221112: “What is the value of KCCA to us as we give them these taxes? They even gave us very
+high rates. Eh? They gave us very high taxes. How do they help us? We pay electricity for
+ourselves we pay the water bills for ourselves everything. Yet they don’t help us even though we are
+paying them all this money. What is their value to us because we pay them taxes? They demand
+what I labor for. When I fail they confiscate the property.”
+
+E.8.2
+
+Taxes unaffordable
+
+• 302: “If I am not a thief, I don’t have any problem with [delinquency being published]... if it so
+happens to come out like that, I could defend myself. They just rate the taxes too highly and we
+fail to pay.”
+
+E.8.3
+
+Lack of Sensitisation/Community Engagement
+
+• 1128: “If anything is going to be affected people need to be informed or sensitized so that they are
+committed...people have to come like you did today and we are talking. And if there was anything
+you told me today about taxes I would happily pay but those people (KCCA) did not do anything
+like this.”
+• 458: “KCCA is not acting fairly. This is because sometimes they send the messages before without
+finding out what is on the ground.”
+• 440: “KCCA should have started by coming to the ground before sending messages to the people
+based on what they discovered.... Messages are sent to people’s phones but they don’t take them
+seriously and they don’t even read them. Someone may read it a bit but ignore it once find out
+it’s from KCCA. It means that for KCCA to get what it wants from the people it must reach out
+physically to them and find out their thoughts.”
+
+Appendix References
+Allingham, M. and Sandmo, A. (1972), ‘Income Tax Evasion: A Theoretical Analysis’, Journal of Public
+Economics 1, 323–338.
+Bergeron, A., Tourek, G. and Weigel, J. (2019), The State Capacity Ceiling on Tax Rates: Evidence from
+Randomized Tax Abatements in the DRC. CEPR Discussion Paper DP16116.
+
+35
+
+Best, M., Gerard, F., Kresch, E. and Zoratto, L. (2019), Greener on the Other Side? Spatial Discontinuities
+in Property Tax Rates and their Effects on Tax Morale. working paper.
+Brockmeyer, A., Ramirez, K., Estefan, A. and Serrato, J. C. S. (2023), Taxing Property in Developing
+Countries: Theory and Evidence from Mexico. working paper.
+Bursztyn, L. and Jensen, R. (2017), ‘Social Image and Economic Behavior in the Field: Identifying,
+Understanding, and Shaping Social Pressure’, Annual Review of Economics 9, 131–153.
+Castro, L. and Scartascini, C. (2015), ‘Tax compliance and enforcement in the pampas evidence from a
+field experiment’, Journal of Eocnomic Behaviour & Organization 116, 65–82.
+Cogneau, D., Gurgand, M., Knebelmann, J., Pouliquen, V. and Sarr, B. (2020), Bringing property owners
+into the tax net: avenues of fiscal capacity and local accountability. evidence from dakar, senegal.
+Working Paper.
+Collin, M., Di Maro, V., Evans, D. K. and Manang, F. (2021), Property tax compliance in Tanzania: Can
+nudges help? Brookings Global Working Paper 161.
+Del Carpio, L. (2022), Are The Neighbors Cheating? Evidence from a Social Norm Experiment on
+Property Taxes in Peru. Working Paper.
+Dzansi, J., Jensen, A., Lagakos, D. and Telli, H. (2020), Technology and Tax Capacity: Evidence from
+Local Taxes in Ghana. Working Paper.
+Gordon, J. (1987), ‘Individual Morality and Reputation Costs as Deterrents to Tax Evasion’, European
+Economic Review 33, 979–805.
+Krause, B. (2020), Taxation Toward Representation: Public Goods, Tax Collection, Social Norms, and
+Democratic Accountability. Working Paper.
+Okunogbe, O. (2019), Becoming legible to the state: Evidence from property taxes in liberia. Working
+Paper.
+Sandholtz, W. A. and Vicente, P. C. (2024), Tax morale, public goods, and politics: Experimental evidence
+from Mozambique. IGC working paper MOZ-22067.
+
+36
+
