@@ -282,11 +282,17 @@ ul.pub-list > li:last-child {
 
 ul.pub-list h3 {
   margin-bottom: 0.25rem;
+  font-size: 0.9rem;
 }
 
 .pub-meta {
   color: var(--muted-color);
   font-size: 0.9rem;
+}
+
+.pub-meta em {
+  font-weight: 700;
+  font-style: italic;
 }
 
 .pub-links {
